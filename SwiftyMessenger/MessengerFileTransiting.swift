@@ -82,3 +82,52 @@ internal protocol TransitingDelegate {
     func notifyListenerForMessage(withIdentifier identifier: String?, message: [String: Any]?)
 
 }
+
+class MessengerFileTransiting: FileTransiting {
+
+    internal var applicationGroupIdentifier: String?
+    internal var directory: String?
+    internal var fileManager: FileManager!
+
+    internal convenience init() {
+        self.init(withApplicationGroupIdentifier: "dev.messenger.nonDesignatedInitializer", directory: nil)
+    }
+
+    /**
+     Initializer.
+
+     - parameter identifier: An application group identifier
+     - parameter directory: An optional directory to read/write messages
+     */
+    init(withApplicationGroupIdentifier identifier: String?, directory: String?) {
+        applicationGroupIdentifier = identifier
+        self.directory = directory
+        fileManager = FileManager()
+        if let applicationGroupIdentifier = applicationGroupIdentifier {
+            checkAppGroupCapabilities(applicationGroupIdentifier: applicationGroupIdentifier)
+        }
+    }
+
+    private func checkAppGroupCapabilities(applicationGroupIdentifier: String) {
+        assert(fileManager.containerURL(forSecurityApplicationGroupIdentifier: applicationGroupIdentifier) != nil, "App Group Capabilities may not be correctly configured for your project, or your appGroupIdentifier may not match your project settings. Check Project->Capabilities->App Groups. Three checkmarks should be displayed in the steps section, and the value passed in for your appGroupIdentifier should match the setting in your project file.")
+    }
+
+    // MARK: FileTransiting
+
+    func writeMessage(message: [String : Any]?, identifier: String) -> Bool {
+        return true
+    }
+
+    func messageForIdentifier(identifier: String?) -> [String : Any]? {
+        return nil
+    }
+
+    func deleteContent(withIdentifier identifier: String?) {
+
+    }
+
+    func deleteContentForAllMessages() {
+
+    }
+
+}
