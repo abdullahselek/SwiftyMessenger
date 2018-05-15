@@ -10,6 +10,7 @@
 		A4FAA04C20AB580300872314 /* SwiftyMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FAA04220AB580300872314 /* SwiftyMessenger.framework */; };
 		A4FAA05120AB580300872314 /* SwiftyMessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FAA05020AB580300872314 /* SwiftyMessengerTests.swift */; };
 		A4FAA05320AB580400872314 /* SwiftyMessenger.h in Headers */ = {isa = PBXBuildFile; fileRef = A4FAA04520AB580300872314 /* SwiftyMessenger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4FAA05D20AB5A0300872314 /* MessengerFileTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FAA05C20AB5A0300872314 /* MessengerFileTransiting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		A4FAA04B20AB580300872314 /* SwiftyMessengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyMessengerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FAA05020AB580300872314 /* SwiftyMessengerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyMessengerTests.swift; sourceTree = "<group>"; };
 		A4FAA05220AB580300872314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4FAA05C20AB5A0300872314 /* MessengerFileTransiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerFileTransiting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				A4FAA04520AB580300872314 /* SwiftyMessenger.h */,
+				A4FAA05C20AB5A0300872314 /* MessengerFileTransiting.swift */,
 				A4FAA04620AB580300872314 /* Info.plist */,
 			);
 			path = SwiftyMessenger;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					A4FAA04120AB580300872314 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
 					};
 					A4FAA04A20AB580300872314 = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4FAA05D20AB5A0300872314 /* MessengerFileTransiting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +344,7 @@
 		A4FAA05720AB580400872314 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.abdullahselek.SwiftyMessenger;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		A4FAA05820AB580400872314 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		A4FAA05A20AB580400872314 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyMessengerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +415,7 @@
 		A4FAA05B20AB580400872314 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyMessengerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
