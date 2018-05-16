@@ -85,7 +85,7 @@ internal protocol TransitingDelegate {
 
 class MessengerFileTransiting: FileTransiting {
 
-    internal var applicationGroupIdentifier: String?
+    internal var applicationGroupIdentifier: String!
     internal var directory: String?
     internal var fileManager: FileManager!
 
@@ -99,17 +99,47 @@ class MessengerFileTransiting: FileTransiting {
      - parameter identifier: An application group identifier
      - parameter directory: An optional directory to read/write messages
      */
-    init(withApplicationGroupIdentifier identifier: String?, directory: String?) {
+    init(withApplicationGroupIdentifier identifier: String, directory: String?) {
         applicationGroupIdentifier = identifier
         self.directory = directory
         fileManager = FileManager()
-        if let applicationGroupIdentifier = applicationGroupIdentifier {
-            checkAppGroupCapabilities(applicationGroupIdentifier: applicationGroupIdentifier)
-        }
+        checkAppGroupCapabilities(applicationGroupIdentifier: applicationGroupIdentifier)
     }
 
     private func checkAppGroupCapabilities(applicationGroupIdentifier: String) {
-        assert(fileManager.containerURL(forSecurityApplicationGroupIdentifier: applicationGroupIdentifier) != nil, "App Group Capabilities may not be correctly configured for your project, or your appGroupIdentifier may not match your project settings. Check Project->Capabilities->App Groups. Three checkmarks should be displayed in the steps section, and the value passed in for your appGroupIdentifier should match the setting in your project file.")
+        if (NSClassFromString("XCTest") == nil) {
+            assert(fileManager.containerURL(forSecurityApplicationGroupIdentifier: applicationGroupIdentifier) != nil, "App Group Capabilities may not be correctly configured for your project, or your appGroupIdentifier may not match your project settings. Check Project->Capabilities->App Groups. Three checkmarks should be displayed in the steps section, and the value passed in for your appGroupIdentifier should match the setting in your project file.")
+        }
+    }
+    
+    // MARK: File Operation Methods
+
+    internal func messagePassingDirectoryPath() -> String? {
+        guard let appGroupContainer = fileManager.containerURL(forSecurityApplicationGroupIdentifier: applicationGroupIdentifier) else {
+            return nil
+        }
+        let appGroupContainerPath = appGroupContainer.path
+        var directoryPath = appGroupContainerPath
+        if let directory = directory {
+            directoryPath = appGroupContainerPath.appending(directory)
+        }
+        do {
+            try fileManager.createDirectory(atPath: directoryPath, withIntermediateDirectories: true, attributes: nil)
+        } catch let error as NSError {
+            print("SwiftyMessenger: Error on messagePassingDirectoryPath \(error.description)")
+            return nil
+        }
+        return directoryPath
+    }
+
+    internal func filePath(forIdentifier identifier: String) -> String? {
+        if identifier.isEmpty {
+            return nil
+        }
+        let directoryPath = messagePassingDirectoryPath()
+        let fileName = String(format: "%@.archive", identifier)
+        let filePath = directoryPath?.appending(fileName)
+        return filePath
     }
 
     // MARK: FileTransiting
