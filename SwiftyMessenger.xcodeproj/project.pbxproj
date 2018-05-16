@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A42A44A520AC926B00CFFA89 /* MessengerFileTransitingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42A44A420AC926B00CFFA89 /* MessengerFileTransitingTests.swift */; };
 		A4FAA04C20AB580300872314 /* SwiftyMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FAA04220AB580300872314 /* SwiftyMessenger.framework */; };
-		A4FAA05120AB580300872314 /* SwiftyMessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FAA05020AB580300872314 /* SwiftyMessengerTests.swift */; };
 		A4FAA05320AB580400872314 /* SwiftyMessenger.h in Headers */ = {isa = PBXBuildFile; fileRef = A4FAA04520AB580300872314 /* SwiftyMessenger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4FAA05D20AB5A0300872314 /* MessengerFileTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FAA05C20AB5A0300872314 /* MessengerFileTransiting.swift */; };
 /* End PBXBuildFile section */
@@ -30,7 +29,6 @@
 		A4FAA04520AB580300872314 /* SwiftyMessenger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyMessenger.h; sourceTree = "<group>"; };
 		A4FAA04620AB580300872314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4FAA04B20AB580300872314 /* SwiftyMessengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyMessengerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4FAA05020AB580300872314 /* SwiftyMessengerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyMessengerTests.swift; sourceTree = "<group>"; };
 		A4FAA05220AB580300872314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4FAA05C20AB5A0300872314 /* MessengerFileTransiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerFileTransiting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,7 +83,6 @@
 		A4FAA04F20AB580300872314 /* SwiftyMessengerTests */ = {
 			isa = PBXGroup;
 			children = (
-				A4FAA05020AB580300872314 /* SwiftyMessengerTests.swift */,
 				A42A44A420AC926B00CFFA89 /* MessengerFileTransitingTests.swift */,
 				A4FAA05220AB580300872314 /* Info.plist */,
 			);
@@ -210,7 +207,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A42A44A520AC926B00CFFA89 /* MessengerFileTransitingTests.swift in Sources */,
-				A4FAA05120AB580300872314 /* SwiftyMessengerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
