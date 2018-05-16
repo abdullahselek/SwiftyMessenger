@@ -1,0 +1,9 @@
+# .slather.yml
+
+coverage_service: cobertura_xml
+workspace: SwiftyMessenger.xcodeworkspace
+xcodeproj: SwiftyMessenger.xcodeproj
+scheme: SwiftyMessenger
+configuration: Debug
+source_directory: SwiftyMessenger
+output_directory: test/xml_report
