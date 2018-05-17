@@ -50,9 +50,9 @@ internal protocol FileTransiting {
       method and be able to read those messages and return their contents.
 
       - parameter identifier: The identifier for the message
-      - return: Optional message dictionary
+      - return: Optional message object
      */
-    func messageForIdentifier(identifier: String?) -> [String: Any]?
+    func messageForIdentifier(identifier: String?) -> Any?
 
     /**
       Clear the persisted contents of a specific message with a given identifier.
@@ -162,8 +162,21 @@ class MessengerFileTransiting: FileTransiting {
         return true
     }
 
-    func messageForIdentifier(identifier: String?) -> [String : Any]? {
-        return nil
+    func messageForIdentifier(identifier: String?) -> Any? {
+        guard let identifier = identifier else {
+            return nil
+        }
+        guard let filePath = self.filePath(forIdentifier: identifier) else {
+            return nil
+        }
+        do {
+            let data = try NSData(contentsOfFile: filePath) as Data
+            let message = NSKeyedUnarchiver.unarchiveObject(with: data)
+            return message
+        } catch let error as NSError {
+            print("SwiftyMessenger: Error on messageForIdentifier \(error.description)")
+            return nil
+        }
     }
 
     func deleteContent(withIdentifier identifier: String?) {
