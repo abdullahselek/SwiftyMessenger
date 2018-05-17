@@ -180,11 +180,34 @@ class MessengerFileTransiting: FileTransiting {
     }
 
     func deleteContent(withIdentifier identifier: String?) {
-
+        guard let identifier = identifier else {
+            print("SwiftyMessenger: Can't delete content, given identifier is nil")
+            return
+        }
+        do {
+            try fileManager.removeItem(atPath: identifier)
+        } catch let error as NSError {
+            print("SwiftyMessenger: Error on deleteContent \(error.description)")
+        }
     }
 
     func deleteContentForAllMessages() {
-
+        guard let _ = directory, let directoryPath = messagePassingDirectoryPath() else {
+            return
+        }
+        do {
+            let messageFiles = try fileManager.contentsOfDirectory(atPath: directoryPath)
+            for path in messageFiles {
+                let filePath = directoryPath.appending(path)
+                do {
+                    try fileManager.removeItem(atPath: filePath)
+                } catch let error as NSError {
+                    print("SwiftyMessenger: Error on deleteContentForAllMessages \(error.description)")
+                }
+            }
+        } catch let error as NSError {
+            print("SwiftyMessenger: Error on deleteContentForAllMessages \(error.description)")
+        }
     }
 
 }
