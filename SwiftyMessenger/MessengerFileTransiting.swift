@@ -145,6 +145,20 @@ class MessengerFileTransiting: FileTransiting {
     // MARK: FileTransiting
 
     func writeMessage(message: [String : Any]?, identifier: String) -> Bool {
+        if identifier.isEmpty {
+            return false
+        }
+        guard let message = message else {
+            return false
+        }
+        let data = NSKeyedArchiver.archivedData(withRootObject: message) as NSData
+        guard let filePath = self.filePath(forIdentifier: identifier) else {
+            return false
+        }
+        let success = data.write(toFile: filePath, atomically: true)
+        if !success {
+            return false
+        }
         return true
     }
 
