@@ -33,7 +33,3 @@ script:
     else
       xcodebuild -workspace "$WORKSPACE" -scheme "$FRAMEWORK_SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=YES build | xcpretty;
     fi
-
-after_success:
-  - slather
-  - bash <(curl -s https://codecov.io/bash) -f test/xml_report/cobertura.xml -X coveragepy -X gcov -X xcode
