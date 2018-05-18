@@ -42,7 +42,7 @@ internal protocol FileTransiting {
       - parameter identifier: The identifier for the message
       - return: `true` indicating that a notification should be sent and `false` otherwise
      */
-    func writeMessage(message: [String: Any]?, identifier: String) -> Bool
+    func writeMessage(message: Any?, identifier: String) -> Bool
 
     /**
       For reading and returning the contents of a given message. It should
@@ -79,7 +79,7 @@ internal protocol TransitingDelegate {
       - parameter identifier: The identifier for the message
       - parameter message: Message dictionary
      */
-    func notifyListenerForMessage(withIdentifier identifier: String?, message: [String: Any]?)
+    func notifyListenerForMessage(withIdentifier identifier: String?, message: Any?)
 
 }
 
@@ -144,7 +144,7 @@ class MessengerFileTransiting: FileTransiting {
 
     // MARK: FileTransiting
 
-    func writeMessage(message: [String : Any]?, identifier: String) -> Bool {
+    func writeMessage(message: Any?, identifier: String) -> Bool {
         if identifier.isEmpty {
             return false
         }
