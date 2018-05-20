@@ -83,7 +83,7 @@ internal protocol TransitingDelegate {
 
 }
 
-class MessengerFileTransiting: FileTransiting {
+open class MessengerFileTransiting: FileTransiting {
 
     internal var applicationGroupIdentifier: String!
     internal var directory: String?
