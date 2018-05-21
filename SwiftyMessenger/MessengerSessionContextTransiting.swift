@@ -32,11 +32,41 @@ import WatchConnectivity
 class MessengerSessionContextTransiting: MessengerFileTransiting {
 
     private var session: WCSession!
-    private var lastContext: [String: Any]!
+    private var lastContext: [String: Any]?
 
     override init(withApplicationGroupIdentifier identifier: String, directory: String?) {
         super.init(withApplicationGroupIdentifier: identifier, directory: directory)
         session = WCSession.default
+    }
+
+    override func writeMessage(message: Any?, identifier: String) -> Bool {
+        if identifier.isEmpty {
+            return false
+        }
+        if !WCSession.isSupported() {
+            return false
+        }
+        guard let message = message else {
+            return false
+        }
+        let data = NSKeyedArchiver.archivedData(withRootObject: message) as Data
+        let applicationContext = session.applicationContext
+        if lastContext == nil {
+            lastContext = applicationContext
+        }
+        var currentContext = applicationContext
+        applicationContext.forEach { (arg) in
+            let (key, value) = arg
+            currentContext[key] = value
+        }
+        currentContext[identifier] = data
+        lastContext = currentContext
+        do {
+            try session.updateApplicationContext(currentContext)
+        } catch let error as NSError {
+            print("SwiftyMessenger: Error on writeMessage \(error.description)")
+        }
+        return false
     }
 
 }
