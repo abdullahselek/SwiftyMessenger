@@ -27,24 +27,35 @@
   and implements message transiting in a similar way but using FileCoordinator for its file
   reading and writing.
  */
-open class MessengerCoordinatedFileTransiting: FileTransiting {
+open class MessengerCoordinatedFileTransiting: MessengerFileTransiting {
 
     open var additionalFileWritingOptions: NSData.WritingOptions!
 
-    func writeMessage(message: Any?, identifier: String) -> Bool {
-        return true
-    }
-
-    func messageForIdentifier(identifier: String?) -> Any? {
-        return nil
-    }
-
-    func deleteContent(withIdentifier identifier: String?) {
-
-    }
-
-    func deleteContentForAllMessages() {
-
+    override func writeMessage(message: Any?, identifier: String) -> Bool {
+        if identifier.isEmpty {
+            return false
+        }
+        guard let message = message else {
+            return false
+        }
+        let data = NSKeyedArchiver.archivedData(withRootObject: message) as NSData
+        guard let filePath = self.filePath(forIdentifier: identifier) else {
+            return false
+        }
+        let fileURL = URL(fileURLWithPath: filePath)
+        let fileCoordinator = NSFileCoordinator(filePresenter: nil)
+        var error: NSError?
+        var success = false
+        fileCoordinator.coordinate(readingItemAt: fileURL, options: NSFileCoordinator.ReadingOptions(rawValue: 0), error: &error) { newURL in
+            do {
+                try data.write(to: newURL, options: [.atomic, additionalFileWritingOptions])
+                success = true
+            } catch let error as NSError {
+                print("SwiftyMessenger: Error on writeMessage \(error.description)")
+                success = false
+            }
+        }
+        return success
     }
 
 }
