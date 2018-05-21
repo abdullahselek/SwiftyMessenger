@@ -23,7 +23,7 @@
 //  SOFTWARE.
 
 /**
-  This class inherits from the default implementation of the FileTransiting protocol
+  Inherits from the default implementation of the FileTransiting protocol
   and implements message transiting in a similar way but using FileCoordinator for its file
   reading and writing.
  */
@@ -46,7 +46,9 @@ open class MessengerCoordinatedFileTransiting: MessengerFileTransiting {
         let fileCoordinator = NSFileCoordinator(filePresenter: nil)
         var error: NSError?
         var success = false
-        fileCoordinator.coordinate(readingItemAt: fileURL, options: NSFileCoordinator.ReadingOptions(rawValue: 0), error: &error) { newURL in
+        fileCoordinator.coordinate(readingItemAt: fileURL,
+                                   options: NSFileCoordinator.ReadingOptions(rawValue: 0),
+                                   error: &error) { newURL in
             do {
                 try data.write(to: newURL, options: [.atomic, additionalFileWritingOptions])
                 success = true
