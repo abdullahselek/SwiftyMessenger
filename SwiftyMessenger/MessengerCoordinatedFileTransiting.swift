@@ -58,4 +58,24 @@ open class MessengerCoordinatedFileTransiting: MessengerFileTransiting {
         return success
     }
 
+    override func messageForIdentifier(identifier: String?) -> Any? {
+        guard let identifier = identifier, let filePath = filePath(forIdentifier: identifier)  else {
+            return nil
+        }
+        let fileURL = URL(fileURLWithPath: filePath)
+        let fileCoordinator = NSFileCoordinator(filePresenter: nil)
+        var error: NSError?
+        var data: NSData? = nil
+        fileCoordinator.coordinate(readingItemAt: fileURL,
+                                   options: NSFileCoordinator.ReadingOptions(rawValue: 0),
+                                   error: &error) { newURL in
+            data = NSData(contentsOf: newURL)
+        }
+        guard let filledData = data as Data? else {
+            return nil
+        }
+        let message = NSKeyedUnarchiver.unarchiveObject(with: filledData)
+        return message
+    }
+
 }
