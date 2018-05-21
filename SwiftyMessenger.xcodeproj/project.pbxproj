@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		836BFBA620B313A5006734CD /* MessengerCoordinatedFileTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836BFBA520B313A5006734CD /* MessengerCoordinatedFileTransiting.swift */; };
 		A42A44A520AC926B00CFFA89 /* MessengerFileTransitingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42A44A420AC926B00CFFA89 /* MessengerFileTransitingTests.swift */; };
 		A4FAA04C20AB580300872314 /* SwiftyMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FAA04220AB580300872314 /* SwiftyMessenger.framework */; };
 		A4FAA05320AB580400872314 /* SwiftyMessenger.h in Headers */ = {isa = PBXBuildFile; fileRef = A4FAA04520AB580300872314 /* SwiftyMessenger.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		836BFBA520B313A5006734CD /* MessengerCoordinatedFileTransiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerCoordinatedFileTransiting.swift; sourceTree = "<group>"; };
 		A42A44A420AC926B00CFFA89 /* MessengerFileTransitingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerFileTransitingTests.swift; sourceTree = "<group>"; };
 		A4FAA04220AB580300872314 /* SwiftyMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FAA04520AB580300872314 /* SwiftyMessenger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyMessenger.h; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			children = (
 				A4FAA04520AB580300872314 /* SwiftyMessenger.h */,
 				A4FAA05C20AB5A0300872314 /* MessengerFileTransiting.swift */,
+				836BFBA520B313A5006734CD /* MessengerCoordinatedFileTransiting.swift */,
 				A4FAA04620AB580300872314 /* Info.plist */,
 			);
 			path = SwiftyMessenger;
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4FAA05D20AB5A0300872314 /* MessengerFileTransiting.swift in Sources */,
+				836BFBA620B313A5006734CD /* MessengerCoordinatedFileTransiting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
