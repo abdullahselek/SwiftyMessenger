@@ -69,4 +69,21 @@ class MessengerSessionContextTransiting: MessengerFileTransiting {
         return false
     }
 
+    override func messageForIdentifier(identifier: String?) -> Any? {
+        guard let identifier = identifier else {
+            return nil
+        }
+        let receivedContext = session.receivedApplicationContext
+        guard let data = receivedContext[identifier] as? Data else {
+            let currentContext = session.applicationContext
+            guard let dataFromContext = currentContext[identifier] as? Data else {
+                return nil
+            }
+            let message = NSKeyedUnarchiver.unarchiveObject(with: dataFromContext)
+            return message
+        }
+        let message = NSKeyedUnarchiver.unarchiveObject(with: data)
+        return message
+    }
+
 }
