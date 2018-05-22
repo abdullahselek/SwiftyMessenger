@@ -100,4 +100,16 @@ class MessengerSessionContextTransiting: MessengerFileTransiting {
         }
     }
 
+    override func deleteContentForAllMessages() {
+        guard var lastContext = lastContext else {
+            return
+        }
+        lastContext.removeAll()
+        do {
+            try session.updateApplicationContext([String: Any]())
+        } catch let error as NSError {
+            print("SwiftyMessenger: Error on deleteContentForAllMessages \(error.description)")
+        }
+    }
+
 }
