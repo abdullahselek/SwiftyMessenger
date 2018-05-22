@@ -86,4 +86,18 @@ class MessengerSessionContextTransiting: MessengerFileTransiting {
         return message
     }
 
+    override func deleteContent(withIdentifier identifier: String?) {
+        guard let identifier = identifier, var lastContext = lastContext else {
+            return
+        }
+        lastContext[identifier] = nil
+        var currentContext = session.applicationContext
+        currentContext[identifier] = nil
+        do {
+            try session.updateApplicationContext(currentContext)
+        } catch let error as NSError {
+            print("SwiftyMessenger: Error on deleteContent \(error.description)")
+        }
+    }
+
 }
