@@ -10,6 +10,7 @@
 		836BFBA620B313A5006734CD /* MessengerCoordinatedFileTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836BFBA520B313A5006734CD /* MessengerCoordinatedFileTransiting.swift */; };
 		A40A663A20B5B1A5003522F8 /* MessengerSessionMessageTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A663920B5B1A5003522F8 /* MessengerSessionMessageTransiting.swift */; };
 		A40A663C20B5B58F003522F8 /* MessengerSessionFileTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A663B20B5B58F003522F8 /* MessengerSessionFileTransiting.swift */; };
+		A40A663E20B5BB38003522F8 /* String+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A663D20B5BB38003522F8 /* String+Path.swift */; };
 		A419412320B35AA60036599D /* MessengerSessionContextTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A419412220B35AA60036599D /* MessengerSessionContextTransiting.swift */; };
 		A42A44A520AC926B00CFFA89 /* MessengerFileTransitingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42A44A420AC926B00CFFA89 /* MessengerFileTransitingTests.swift */; };
 		A4FAA04C20AB580300872314 /* SwiftyMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FAA04220AB580300872314 /* SwiftyMessenger.framework */; };
@@ -31,6 +32,7 @@
 		836BFBA520B313A5006734CD /* MessengerCoordinatedFileTransiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerCoordinatedFileTransiting.swift; sourceTree = "<group>"; };
 		A40A663920B5B1A5003522F8 /* MessengerSessionMessageTransiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerSessionMessageTransiting.swift; sourceTree = "<group>"; };
 		A40A663B20B5B58F003522F8 /* MessengerSessionFileTransiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerSessionFileTransiting.swift; sourceTree = "<group>"; };
+		A40A663D20B5BB38003522F8 /* String+Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Path.swift"; sourceTree = "<group>"; };
 		A419412220B35AA60036599D /* MessengerSessionContextTransiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerSessionContextTransiting.swift; sourceTree = "<group>"; };
 		A42A44A420AC926B00CFFA89 /* MessengerFileTransitingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerFileTransitingTests.swift; sourceTree = "<group>"; };
 		A4FAA04220AB580300872314 /* SwiftyMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 				A419412220B35AA60036599D /* MessengerSessionContextTransiting.swift */,
 				A40A663B20B5B58F003522F8 /* MessengerSessionFileTransiting.swift */,
 				A40A663920B5B1A5003522F8 /* MessengerSessionMessageTransiting.swift */,
+				A40A663D20B5BB38003522F8 /* String+Path.swift */,
 				A4FAA04620AB580300872314 /* Info.plist */,
 			);
 			path = SwiftyMessenger;
@@ -215,6 +218,7 @@
 				A40A663C20B5B58F003522F8 /* MessengerSessionFileTransiting.swift in Sources */,
 				836BFBA620B313A5006734CD /* MessengerCoordinatedFileTransiting.swift in Sources */,
 				A40A663A20B5B1A5003522F8 /* MessengerSessionMessageTransiting.swift in Sources */,
+				A40A663E20B5BB38003522F8 /* String+Path.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
