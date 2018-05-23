@@ -121,7 +121,7 @@ open class MessengerFileTransiting: FileTransiting {
         let appGroupContainerPath = appGroupContainer.path
         var directoryPath = appGroupContainerPath
         if let directory = directory {
-            directoryPath = appGroupContainerPath.appending(directory)
+            directoryPath = appGroupContainerPath.appendingPathComponent(path: directory)
         }
         do {
             try fileManager.createDirectory(atPath: directoryPath, withIntermediateDirectories: true, attributes: nil)
@@ -138,7 +138,7 @@ open class MessengerFileTransiting: FileTransiting {
         }
         let directoryPath = messagePassingDirectoryPath()
         let fileName = String(format: "%@.archive", identifier)
-        let filePath = directoryPath?.appending(fileName)
+        let filePath = directoryPath?.appendingPathComponent(path: fileName)
         return filePath
     }
 
@@ -198,7 +198,7 @@ open class MessengerFileTransiting: FileTransiting {
         do {
             let messageFiles = try fileManager.contentsOfDirectory(atPath: directoryPath)
             for path in messageFiles {
-                let filePath = directoryPath.appending(path)
+                let filePath = directoryPath.appendingPathComponent(path: path)
                 do {
                     try fileManager.removeItem(atPath: filePath)
                 } catch let error as NSError {

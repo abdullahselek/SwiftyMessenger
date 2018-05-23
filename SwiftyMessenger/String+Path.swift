@@ -24,7 +24,7 @@
 
 extension String {
 
-    func stringByAppendingPathComponent(path: String) -> String {
+    func appendingPathComponent(path: String) -> String {
         let nsSt = self as NSString
         return nsSt.appendingPathComponent(path)
     }
