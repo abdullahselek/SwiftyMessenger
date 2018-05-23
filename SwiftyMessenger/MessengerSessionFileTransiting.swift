@@ -38,4 +38,31 @@ class MessengerSessionFileTransiting: MessengerFileTransiting {
         session = WCSession.default
     }
 
+    override func writeMessage(message: Any?, identifier: String) -> Bool {
+        if identifier.isEmpty {
+            return false
+        }
+        if !WCSession.isSupported() {
+            return false
+        }
+        guard let message = message else {
+            return false
+        }
+        let data = NSKeyedArchiver.archivedData(withRootObject: message)
+        var tempDir = messagePassingDirectoryPath() ?? ""
+        if tempDir.isEmpty {
+            tempDir = NSTemporaryDirectory()
+        }
+        guard let tempURL = NSURL(fileURLWithPath: tempDir).appendingPathComponent(identifier) else {
+            return false
+        }
+        do {
+            try data.write(to: tempURL)
+            session.transferFile(tempURL, metadata: ["identifier": identifier])
+        } catch let error as NSError {
+            print("SwiftyMessenger: Error on writeMessage \(error.description)")
+        }
+        return false
+    }
+
 }
