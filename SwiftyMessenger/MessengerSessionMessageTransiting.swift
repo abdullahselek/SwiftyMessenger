@@ -40,4 +40,21 @@ class MessengerSessionMessageTransiting: MessengerFileTransiting {
         return nil
     }
 
+    override func writeMessage(message: Any?, identifier: String) -> Bool {
+        if identifier.isEmpty {
+            return false
+        }
+        guard let message = message else {
+            return false
+        }
+        let data = NSKeyedArchiver.archivedData(withRootObject: message)
+        if session.isReachable {
+            session.sendMessage([identifier: data], replyHandler: nil) { error in
+                let nsError = error as NSError
+                print("SwiftyMessenger: Error on writeMessage \(nsError.description)")
+            }
+        }
+        return true
+    }
+
 }
