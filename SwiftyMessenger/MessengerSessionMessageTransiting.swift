@@ -57,4 +57,8 @@ class MessengerSessionMessageTransiting: MessengerFileTransiting {
         return true
     }
 
+    override func messageForIdentifier(identifier: String?) -> Any? {
+        return nil
+    }
+
 }
