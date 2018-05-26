@@ -29,6 +29,20 @@
 open class Messenger: TransitingDelegate {
 
     open var transitingDelegate: FileTransiting?
+    private var listenerBlocks = [String: (Any) -> Void]()
+    private static let NotificationName = NSNotification.Name(rawValue: "MessengerNotificationName")
+
+    public init(withApplicationGroupIdentifier identifier: String, directory: String?) {
+        transitingDelegate = MessengerFileTransiting(withApplicationGroupIdentifier: identifier, directory: directory)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(Messenger.didReceiveMessageNotification(notification:)),
+                                               name: Messenger.NotificationName,
+                                               object: self)
+    }
+
+    @objc private func didReceiveMessageNotification(notification: Notification) {
+
+    }
 
     open func notifyListenerForMessage(withIdentifier identifier: String?, message: Any?) {
 
