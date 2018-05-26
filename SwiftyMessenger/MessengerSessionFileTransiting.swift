@@ -29,7 +29,7 @@ import WatchConnectivity
   will behave very similar to the MessengerFileTransiting implementation, meaning it will archive
   messages to disk as files and send them via the WatchConnectivity framework's -transferFile API.
  */
-class MessengerSessionFileTransiting: MessengerFileTransiting {
+open class MessengerSessionFileTransiting: MessengerFileTransiting {
 
     private var session: WCSession!
 
