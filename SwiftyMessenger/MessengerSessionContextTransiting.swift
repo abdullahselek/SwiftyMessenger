@@ -29,7 +29,7 @@ import WatchConnectivity
   reading and writing ability. This class will pass it's messages directly via the
   -updateApplicationContext method, and read message values from application context.
  */
-class MessengerSessionContextTransiting: MessengerFileTransiting {
+open class MessengerSessionContextTransiting: MessengerFileTransiting {
 
     private var session: WCSession!
     private var lastContext: [String: Any]?
