@@ -27,7 +27,7 @@ import WatchConnectivity
 /**
   Provides support for the WatchConnectivity framework's real time message passing ability.
  */
-class MessengerSessionMessageTransiting: MessengerFileTransiting {
+open class MessengerSessionMessageTransiting: MessengerFileTransiting {
 
     private var session: WCSession!
 
