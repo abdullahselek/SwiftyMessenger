@@ -28,7 +28,7 @@
   case it involves both the reading and writing of messages as well as the deletion of message
   contents.
  */
-internal protocol FileTransiting {
+public protocol FileTransiting {
 
     /**
       Responsible for writing a given message object in a persisted format for a given
@@ -71,7 +71,7 @@ internal protocol FileTransiting {
 /**
   Protocol used to notify container app and extension with identifier and message.
  */
-internal protocol TransitingDelegate {
+public protocol TransitingDelegate {
 
     /**
       Notifier between two sides.
@@ -99,7 +99,7 @@ open class MessengerFileTransiting: FileTransiting {
      - parameter identifier: An application group identifier
      - parameter directory: An optional directory to read/write messages
      */
-    init(withApplicationGroupIdentifier identifier: String, directory: String?) {
+    public init(withApplicationGroupIdentifier identifier: String, directory: String?) {
         applicationGroupIdentifier = identifier
         self.directory = directory
         fileManager = FileManager()
@@ -144,7 +144,7 @@ open class MessengerFileTransiting: FileTransiting {
 
     // MARK: FileTransiting
 
-    func writeMessage(message: Any?, identifier: String) -> Bool {
+    open func writeMessage(message: Any?, identifier: String) -> Bool {
         if identifier.isEmpty {
             return false
         }
@@ -162,7 +162,7 @@ open class MessengerFileTransiting: FileTransiting {
         return true
     }
 
-    func messageForIdentifier(identifier: String?) -> Any? {
+    open func messageForIdentifier(identifier: String?) -> Any? {
         guard let identifier = identifier else {
             return nil
         }
@@ -179,7 +179,7 @@ open class MessengerFileTransiting: FileTransiting {
         }
     }
 
-    func deleteContent(withIdentifier identifier: String?) {
+    open func deleteContent(withIdentifier identifier: String?) {
         guard let identifier = identifier else {
             print("SwiftyMessenger: Can't delete content, given identifier is nil")
             return
@@ -191,7 +191,7 @@ open class MessengerFileTransiting: FileTransiting {
         }
     }
 
-    func deleteContentForAllMessages() {
+    open func deleteContentForAllMessages() {
         guard let _ = directory, let directoryPath = messagePassingDirectoryPath() else {
             return
         }

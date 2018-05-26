@@ -39,7 +39,7 @@ open class MessengerSessionContextTransiting: MessengerFileTransiting {
         session = WCSession.default
     }
 
-    override func writeMessage(message: Any?, identifier: String) -> Bool {
+    override open func writeMessage(message: Any?, identifier: String) -> Bool {
         if identifier.isEmpty {
             return false
         }
@@ -69,7 +69,7 @@ open class MessengerSessionContextTransiting: MessengerFileTransiting {
         return false
     }
 
-    override func messageForIdentifier(identifier: String?) -> Any? {
+    override open func messageForIdentifier(identifier: String?) -> Any? {
         guard let identifier = identifier else {
             return nil
         }
@@ -86,7 +86,7 @@ open class MessengerSessionContextTransiting: MessengerFileTransiting {
         return message
     }
 
-    override func deleteContent(withIdentifier identifier: String?) {
+    override open func deleteContent(withIdentifier identifier: String?) {
         guard let identifier = identifier, var lastContext = lastContext else {
             return
         }
@@ -100,7 +100,7 @@ open class MessengerSessionContextTransiting: MessengerFileTransiting {
         }
     }
 
-    override func deleteContentForAllMessages() {
+    override open func deleteContentForAllMessages() {
         guard var lastContext = lastContext else {
             return
         }

@@ -31,7 +31,7 @@ open class MessengerCoordinatedFileTransiting: MessengerFileTransiting {
 
     open var additionalFileWritingOptions: NSData.WritingOptions!
 
-    override func writeMessage(message: Any?, identifier: String) -> Bool {
+    override open func writeMessage(message: Any?, identifier: String) -> Bool {
         if identifier.isEmpty {
             return false
         }
@@ -60,7 +60,7 @@ open class MessengerCoordinatedFileTransiting: MessengerFileTransiting {
         return success
     }
 
-    override func messageForIdentifier(identifier: String?) -> Any? {
+    override open func messageForIdentifier(identifier: String?) -> Any? {
         guard let identifier = identifier, let filePath = filePath(forIdentifier: identifier)  else {
             return nil
         }

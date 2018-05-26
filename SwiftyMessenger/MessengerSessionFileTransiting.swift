@@ -38,7 +38,7 @@ open class MessengerSessionFileTransiting: MessengerFileTransiting {
         session = WCSession.default
     }
 
-    override func writeMessage(message: Any?, identifier: String) -> Bool {
+    override open func writeMessage(message: Any?, identifier: String) -> Bool {
         if identifier.isEmpty {
             return false
         }
