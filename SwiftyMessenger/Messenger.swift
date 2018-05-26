@@ -22,6 +22,14 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+public enum TransitingType {
+    case file
+    case coordinatedFile
+    case sessionContext
+    case sessionMessage
+    case sessionFile
+}
+
 /**
   Creates a connection between a containing iOS application and an extension. Used to pass data or
   commands back and forth between the two locations.
@@ -38,6 +46,28 @@ open class Messenger: TransitingDelegate {
                                                selector: #selector(Messenger.didReceiveMessageNotification(notification:)),
                                                name: Messenger.NotificationName,
                                                object: self)
+    }
+
+    public convenience init(withApplicationGroupIdentifier identifier: String,
+                            directory: String?,
+                            transitingType: TransitingType) {
+        self.init(withApplicationGroupIdentifier: identifier, directory: directory)
+        switch transitingType {
+        case .file:
+            break
+        case .coordinatedFile:
+            transitingDelegate = MessengerCoordinatedFileTransiting(withApplicationGroupIdentifier: identifier, directory: directory)
+            break
+        case .sessionContext:
+            transitingDelegate = MessengerSessionContextTransiting(withApplicationGroupIdentifier: identifier, directory: directory)
+            break
+        case .sessionFile:
+            transitingDelegate = MessengerSessionFileTransiting(withApplicationGroupIdentifier: identifier, directory: directory)
+            break
+        case .sessionMessage:
+            transitingDelegate = MessengerSessionMessageTransiting(withApplicationGroupIdentifier: identifier, directory: directory)
+            break
+        }
     }
 
     @objc private func didReceiveMessageNotification(notification: Notification) {
