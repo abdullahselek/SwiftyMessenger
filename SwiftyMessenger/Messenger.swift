@@ -22,6 +22,8 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+import CoreFoundation
+
 public enum TransitingType {
     case file
     case coordinatedFile
@@ -68,6 +70,13 @@ open class Messenger: TransitingDelegate {
             transitingDelegate = MessengerSessionMessageTransiting(withApplicationGroupIdentifier: identifier, directory: directory)
             break
         }
+    }
+
+    var notificationCallback: (CFNotificationCenter, Void, CFString, Void, CFDictionary) -> Void = {
+        (center, observer, name, object, userInfo) -> Void in
+        let identifier = name as String
+        let sender = observer as Any
+        NotificationCenter.default.post(name: Messenger.NotificationName, object:sender, userInfo: ["identifier": identifier])
     }
 
     @objc private func didReceiveMessageNotification(notification: Notification) {
