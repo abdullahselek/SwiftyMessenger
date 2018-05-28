@@ -72,11 +72,29 @@ open class Messenger: TransitingDelegate {
         }
     }
 
-    var notificationCallback: (CFNotificationCenter, Void, CFString, Void, CFDictionary) -> Void = {
-        (center, observer, name, object, userInfo) -> Void in
-        let identifier = name as String
-        let sender = observer as Any
-        NotificationCenter.default.post(name: Messenger.NotificationName, object:sender, userInfo: ["identifier": identifier])
+    private func notificationCallBack(observer: UnsafeMutableRawPointer, identifier: String) {
+        NotificationCenter.default.post(name: Messenger.NotificationName, object:observer, userInfo: ["identifier": identifier])
+    }
+
+    private func registerForNotification(withIdentifier identifier: String) {
+        unregisterForNotification(withIdentifier: identifier)
+        let notificationCenter = CFNotificationCenterGetDarwinNotifyCenter()
+        let str = identifier as CFString
+        let observer = UnsafeRawPointer(Unmanaged.passUnretained(self).toOpaque())
+        CFNotificationCenterAddObserver(notificationCenter, observer, {
+            (notificationCenter, observer, notificationName, rawPointer, dictionary)  -> Void in
+            if let observer = observer, let notificationName = notificationName {
+                let mySelf = Unmanaged<Messenger>.fromOpaque(observer).takeUnretainedValue()
+                mySelf.notificationCallBack(observer: observer, identifier: notificationName.rawValue as String)
+            }
+        }, str, nil, .deliverImmediately)
+    }
+
+    private func unregisterForNotification(withIdentifier identifier: String) {
+        let notificationCenter = CFNotificationCenterGetDarwinNotifyCenter()
+        let str = identifier as CFString
+        let observer = UnsafeRawPointer(Unmanaged.passUnretained(self).toOpaque())
+        CFNotificationCenterRemoveObserver(notificationCenter, observer, CFNotificationName(str), nil)
     }
 
     @objc private func didReceiveMessageNotification(notification: Notification) {
