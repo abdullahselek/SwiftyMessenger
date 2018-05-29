@@ -140,4 +140,18 @@ open class Messenger: TransitingDelegate {
         }
     }
 
+    /**
+      Returns the value of a message with a specific identifier as an object.
+     */
+    open func messageForIdentifier(identifier: String?) -> Any? {
+        return transitingDelegate?.messageForIdentifier(identifier: identifier)
+    }
+
+    /**
+      Clears the contents of a specific message with a given identifier.
+     */
+    open func clearMessageContents(identifer: String?) {
+        transitingDelegate?.deleteContent(withIdentifier: identifer)
+    }
+
 }
