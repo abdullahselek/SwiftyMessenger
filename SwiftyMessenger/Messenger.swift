@@ -59,16 +59,12 @@ open class Messenger: TransitingDelegate {
             break
         case .coordinatedFile:
             transitingDelegate = MessengerCoordinatedFileTransiting(withApplicationGroupIdentifier: identifier, directory: directory)
-            break
         case .sessionContext:
             transitingDelegate = MessengerSessionContextTransiting(withApplicationGroupIdentifier: identifier, directory: directory)
-            break
         case .sessionFile:
             transitingDelegate = MessengerSessionFileTransiting(withApplicationGroupIdentifier: identifier, directory: directory)
-            break
         case .sessionMessage:
             transitingDelegate = MessengerSessionMessageTransiting(withApplicationGroupIdentifier: identifier, directory: directory)
-            break
         }
     }
 
