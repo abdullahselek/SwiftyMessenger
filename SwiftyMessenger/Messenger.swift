@@ -154,4 +154,11 @@ open class Messenger: TransitingDelegate {
         transitingDelegate?.deleteContent(withIdentifier: identifer)
     }
 
+    /**
+      Clears the contents of your optional message directory to give you a clean state.
+     */
+    open func clearAllMessageContents() {
+        transitingDelegate?.deleteContentForAllMessages()
+    }
+
 }
