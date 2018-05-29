@@ -94,11 +94,30 @@ open class Messenger: TransitingDelegate {
     }
 
     @objc private func didReceiveMessageNotification(notification: Notification) {
-
+        guard let userInfo = notification.userInfo else {
+            return
+        }
+        guard let identifier = userInfo["identifier"] as? String else {
+            return
+        }
+        let message = transitingDelegate?.messageForIdentifier(identifier: identifier)
+        notifyListenerForMessage(withIdentifier: identifier, message: message)
     }
 
     open func notifyListenerForMessage(withIdentifier identifier: String?, message: Any?) {
+        guard let identifier = identifier, let message = message else {
+            return
+        }
+        guard let listenerBlock = listenerBlock(forIdentifier: identifier) else {
+            return
+        }
+        DispatchQueue.main.async {
+            listenerBlock(message)
+        }
+    }
 
+    private func listenerBlock(forIdentifier identifier: String) -> ((Any) -> Void)? {
+        return listenerBlocks[identifier]
     }
 
 }
