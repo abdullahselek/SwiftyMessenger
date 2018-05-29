@@ -120,4 +120,24 @@ open class Messenger: TransitingDelegate {
         return listenerBlocks[identifier]
     }
 
+    private func sendNotification(forMessageIdentifier identifier: String) {
+        let notificationCenter = CFNotificationCenterGetDarwinNotifyCenter()
+        let deliverImmediately = true
+        let str = identifier as CFString
+        CFNotificationCenterPostNotification(notificationCenter, CFNotificationName(str), nil, nil, deliverImmediately)
+    }
+
+    /**
+      Passes a message associated with a given identifier. This is the primary means
+      of passing information through the messenger.
+     */
+    open func passMessage(message: Any?, identifier: String?) {
+        guard let identifier = identifier else {
+            return
+        }
+        if transitingDelegate?.writeMessage(message: message, identifier: identifier) == true {
+            sendNotification(forMessageIdentifier: identifier)
+        }
+    }
+
 }
