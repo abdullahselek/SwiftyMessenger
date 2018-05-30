@@ -161,4 +161,28 @@ open class Messenger: TransitingDelegate {
         transitingDelegate?.deleteContentForAllMessages()
     }
 
+    /**
+      Begins listening for notifications of changes to a message with a specific identifier.
+      If notifications are observed then the given listener block will be called along with the actual
+      message.
+     */
+    open func listenForMessage(withIdentifier identifier: String?, listener: @escaping ((Any) -> Void)) {
+        guard let identifier = identifier else {
+            return
+        }
+        listenerBlocks[identifier] = listener
+        registerForNotification(withIdentifier: identifier)
+    }
+
+    /**
+      Stops listening for change notifications for a given message identifier.
+     */
+    open func stopListeningForMessage(withIdentifier identifier: String?) {
+        guard let identifier = identifier else {
+            return
+        }
+        listenerBlocks[identifier] = nil
+        unregisterForNotification(withIdentifier: identifier)
+    }
+
 }
