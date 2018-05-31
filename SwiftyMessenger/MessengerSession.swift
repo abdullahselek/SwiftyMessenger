@@ -26,6 +26,33 @@ import WatchConnectivity
 
 open class MessengerSession: NSObject {
 
-    open static let shared = MessengerSession()
+}
+
+extension MessengerSession: WCSessionDelegate {
+
+    @available(iOS 9.3, *)
+    public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+
+    }
+
+    public func sessionDidBecomeInactive(_ session: WCSession) {
+
+    }
+
+    public func sessionDidDeactivate(_ session: WCSession) {
+
+    }
+
+    public func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+
+    }
+
+    public func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+
+    }
+
+    public func session(_ session: WCSession, didReceive file: WCSessionFile) {
+
+    }
 
 }
