@@ -31,7 +31,7 @@ open class MessengerSessionMessageTransiting: MessengerFileTransiting {
 
     private var session: WCSession!
 
-    override init(withApplicationGroupIdentifier identifier: String, directory: String?) {
+    override init(withApplicationGroupIdentifier identifier: String?, directory: String?) {
         super.init(withApplicationGroupIdentifier: identifier, directory: directory)
         session = WCSession.default
     }

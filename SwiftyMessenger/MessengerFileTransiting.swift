@@ -99,7 +99,7 @@ open class MessengerFileTransiting: FileTransiting {
      - parameter identifier: An application group identifier
      - parameter directory: An optional directory to read/write messages
      */
-    public init(withApplicationGroupIdentifier identifier: String, directory: String?) {
+    public init(withApplicationGroupIdentifier identifier: String?, directory: String?) {
         applicationGroupIdentifier = identifier
         self.directory = directory
         fileManager = FileManager()
