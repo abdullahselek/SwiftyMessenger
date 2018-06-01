@@ -26,6 +26,21 @@ import WatchConnectivity
 
 open class MessengerSession: NSObject {
 
+    private var session: WCSession!
+    private var messenger: Messenger!
+    open static let shared = MessengerSession()
+
+    private override init() {
+        super.init()
+        messenger = Messenger(withApplicationGroupIdentifier: nil, directory: nil)
+        session = WCSession.default
+        session.delegate = self
+    }
+
+    open func activateSession() {
+        session.activate()
+    }
+
 }
 
 extension MessengerSession: WCSessionDelegate {
