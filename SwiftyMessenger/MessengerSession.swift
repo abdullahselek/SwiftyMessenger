@@ -59,7 +59,12 @@ extension MessengerSession: WCSessionDelegate {
     }
 
     public func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-
+        for identifier in message.keys {
+            if let data = message[identifier] as? Data {
+                let message = NSKeyedUnarchiver.unarchiveObject(with: data)
+                messenger.notifyListenerForMessage(withIdentifier: identifier, message: message)
+            }
+        }
     }
 
     public func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
