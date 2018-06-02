@@ -77,7 +77,24 @@ extension MessengerSession: WCSessionDelegate {
     }
 
     public func session(_ session: WCSession, didReceive file: WCSessionFile) {
-
+        guard let identifier =  file.metadata?["identifier"] as? String else {
+            return
+        }
+        do {
+            let data = try NSData(contentsOf: file.fileURL) as Data
+            guard let message = NSKeyedUnarchiver.unarchiveObject(with: data) else {
+                return
+            }
+            messenger.notifyListenerForMessage(withIdentifier: identifier, message: message)
+            let messengerFileTransiting = messenger.transitingDelegate as? MessengerFileTransiting
+            let archivedData = NSKeyedArchiver.archivedData(withRootObject: message) as NSData
+            guard let filePath = messengerFileTransiting?.filePath(forIdentifier: identifier) else {
+                return
+            }
+            archivedData.write(to: URL(fileURLWithPath: filePath), atomically: true)
+        } catch let error as NSError {
+            print("SwiftyMessenger: Error on didReceive file \(error.description)")
+        }
     }
 
 }
