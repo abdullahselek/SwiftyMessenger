@@ -126,7 +126,7 @@ open class MessengerFileTransiting: FileTransiting {
         do {
             try fileManager.createDirectory(atPath: directoryPath, withIntermediateDirectories: true, attributes: nil)
         } catch let error as NSError {
-            print("SwiftyMessenger: Error on messagePassingDirectoryPath \(error.description)")
+            NSLog("SwiftyMessenger: Error on messagePassingDirectoryPath \(error.description)")
             return nil
         }
         return directoryPath
@@ -174,20 +174,20 @@ open class MessengerFileTransiting: FileTransiting {
             let message = NSKeyedUnarchiver.unarchiveObject(with: data)
             return message
         } catch let error as NSError {
-            print("SwiftyMessenger: Error on messageForIdentifier \(error.description)")
+            NSLog("SwiftyMessenger: Error on messageForIdentifier \(error.description)")
             return nil
         }
     }
 
     open func deleteContent(withIdentifier identifier: String?) {
         guard let identifier = identifier else {
-            print("SwiftyMessenger: Can't delete content, given identifier is nil")
+            NSLog("SwiftyMessenger: Can't delete content, given identifier is nil")
             return
         }
         do {
             try fileManager.removeItem(atPath: identifier)
         } catch let error as NSError {
-            print("SwiftyMessenger: Error on deleteContent \(error.description)")
+            NSLog("SwiftyMessenger: Error on deleteContent \(error.description)")
         }
     }
 
@@ -202,11 +202,11 @@ open class MessengerFileTransiting: FileTransiting {
                 do {
                     try fileManager.removeItem(atPath: filePath)
                 } catch let error as NSError {
-                    print("SwiftyMessenger: Error on deleteContentForAllMessages \(error.description)")
+                    NSLog("SwiftyMessenger: Error on deleteContentForAllMessages \(error.description)")
                 }
             }
         } catch let error as NSError {
-            print("SwiftyMessenger: Error on deleteContentForAllMessages \(error.description)")
+            NSLog("SwiftyMessenger: Error on deleteContentForAllMessages \(error.description)")
         }
     }
 

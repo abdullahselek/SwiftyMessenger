@@ -53,7 +53,7 @@ open class MessengerCoordinatedFileTransiting: MessengerFileTransiting {
                 try data.write(to: newURL, options: [.atomic, additionalFileWritingOptions])
                 success = true
             } catch let error as NSError {
-                print("SwiftyMessenger: Error on writeMessage \(error.description)")
+                NSLog("SwiftyMessenger: Error on writeMessage \(error.description)")
                 success = false
             }
         }

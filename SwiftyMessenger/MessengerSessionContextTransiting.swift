@@ -64,7 +64,7 @@ open class MessengerSessionContextTransiting: MessengerFileTransiting {
         do {
             try session.updateApplicationContext(currentContext)
         } catch let error as NSError {
-            print("SwiftyMessenger: Error on writeMessage \(error.description)")
+            NSLog("SwiftyMessenger: Error on writeMessage \(error.description)")
         }
         return false
     }
@@ -96,7 +96,7 @@ open class MessengerSessionContextTransiting: MessengerFileTransiting {
         do {
             try session.updateApplicationContext(currentContext)
         } catch let error as NSError {
-            print("SwiftyMessenger: Error on deleteContent \(error.description)")
+            NSLog("SwiftyMessenger: Error on deleteContent \(error.description)")
         }
     }
 
@@ -108,7 +108,7 @@ open class MessengerSessionContextTransiting: MessengerFileTransiting {
         do {
             try session.updateApplicationContext([String: Any]())
         } catch let error as NSError {
-            print("SwiftyMessenger: Error on deleteContentForAllMessages \(error.description)")
+            NSLog("SwiftyMessenger: Error on deleteContentForAllMessages \(error.description)")
         }
     }
 

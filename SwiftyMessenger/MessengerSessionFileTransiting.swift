@@ -60,7 +60,7 @@ open class MessengerSessionFileTransiting: MessengerFileTransiting {
             try data.write(to: tempURL)
             session.transferFile(tempURL, metadata: ["identifier": identifier])
         } catch let error as NSError {
-            print("SwiftyMessenger: Error on writeMessage \(error.description)")
+            NSLog("SwiftyMessenger: Error on writeMessage \(error.description)")
         }
         return false
     }

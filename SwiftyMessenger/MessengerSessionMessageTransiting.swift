@@ -51,7 +51,7 @@ open class MessengerSessionMessageTransiting: MessengerFileTransiting {
         if session.isReachable {
             session.sendMessage([identifier: data], replyHandler: nil) { error in
                 let nsError = error as NSError
-                print("SwiftyMessenger: Error on writeMessage \(nsError.description)")
+                NSLog("SwiftyMessenger: Error on writeMessage \(nsError.description)")
             }
         }
         return true

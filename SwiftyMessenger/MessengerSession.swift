@@ -93,7 +93,7 @@ extension MessengerSession: WCSessionDelegate {
             }
             archivedData.write(to: URL(fileURLWithPath: filePath), atomically: true)
         } catch let error as NSError {
-            print("SwiftyMessenger: Error on didReceive file \(error.description)")
+            NSLog("SwiftyMessenger: Error on didReceive file \(error.description)")
         }
     }
 
