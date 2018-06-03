@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Sample iOS App/Sample iOS App.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:SwiftyMessenger.xcodeproj">
    </FileRef>
 </Workspace>
