@@ -1,5 +1,5 @@
 framework module SwiftyMessenger {
-  umbrella header "SwiftyMessenger-umbrella.h"
+  umbrella header "SwiftyMessenger-watchOS-umbrella.h"
 
   export *
   module * { export * }

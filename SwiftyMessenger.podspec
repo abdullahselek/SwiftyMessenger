@@ -16,7 +16,8 @@ Pod::Spec.new do |s|
         :tag => s.version.to_s
     }
     s.ios.deployment_target = '9.0'
-    s.source_files          = 'SwiftyMessenger/*.swift'
+    s.watchos.deployment_target = '2.0'
+    s.source_files          = 'Source/*.swift'
     s.requires_arc          = true
 
 end

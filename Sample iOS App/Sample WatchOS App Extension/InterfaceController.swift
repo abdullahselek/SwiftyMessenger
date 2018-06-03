@@ -8,7 +8,7 @@
 
 import WatchKit
 import Foundation
-
+import SwiftyMessenger
 
 class InterfaceController: WKInterfaceController {
 

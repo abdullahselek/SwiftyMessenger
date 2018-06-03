@@ -15,8 +15,9 @@
     "tag": "0.1"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "9.0",
+    "watchos": "2.0"
   },
-  "source_files": "SwiftyMessenger/*.swift",
+  "source_files": "Source/*.swift",
   "requires_arc": true
 }

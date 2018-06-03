@@ -5,7 +5,7 @@
       location = "group:Sample iOS App/Sample iOS App.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:SwiftyMessenger.xcodeproj">
+      location = "container:/Users/abdullahselek/Repositories/SwiftyMessenger/SwiftyMessenger.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

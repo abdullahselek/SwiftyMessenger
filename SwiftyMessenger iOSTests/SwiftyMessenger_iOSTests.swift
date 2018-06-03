@@ -13,7 +13,7 @@ import XCTest
 class MessengerFileTransitingTests: XCTestCase {
 
     var fileTransiting: MessengerFileTransiting!
-    
+
     override func setUp() {
         super.setUp()
         fileTransiting = MessengerFileTransiting(withApplicationGroupIdentifier: "com.abdullahselek.SwiftyGroup", directory: "tests")

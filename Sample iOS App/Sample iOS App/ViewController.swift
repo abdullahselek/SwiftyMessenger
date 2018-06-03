@@ -11,14 +11,27 @@ import SwiftyMessenger
 
 class ViewController: UIViewController {
 
+    private static let groupIdentifier = "group.com.abdullahselek.swiftymessenger"
+    private static let directory = "messenger"
+
+    private var messenger: Messenger!
+    private var watchConnectivityMessenger: Messenger!
+    private var messengerListeningSession: MessengerSession!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        messenger = Messenger(withApplicationGroupIdentifier: ViewController.groupIdentifier, directory: ViewController.directory)
+        messengerListeningSession = MessengerSession.shared
+        watchConnectivityMessenger = Messenger(withApplicationGroupIdentifier: ViewController.groupIdentifier, directory: ViewController.directory, transitingType: .sessionContext)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+
+extension ViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
     }
 
 }

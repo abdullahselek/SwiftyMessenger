@@ -6,7 +6,7 @@ env:
   - LC_CTYPE=en_US.UTF-8
   - LANG=en_US.UTF-8
   - WORKSPACE=SwiftyMessenger.xcworkspace
-  - FRAMEWORK_SCHEME="SwiftyMessenger"
+  - FRAMEWORK_SCHEME="SwiftyMessenger iOS"
   - SDK=iphonesimulator11.3
   - RUN_TESTS="YES"
   - POD_LINT="NO"

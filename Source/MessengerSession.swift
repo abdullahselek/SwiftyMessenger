@@ -45,18 +45,23 @@ open class MessengerSession: NSObject {
 
 extension MessengerSession: WCSessionDelegate {
 
+    @available(watchOSApplicationExtension 2.2, *)
     @available(iOS 9.3, *)
     public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
 
     }
-
+    
+    #if os(iOS)
     public func sessionDidBecomeInactive(_ session: WCSession) {
 
     }
+    #endif
 
+    #if os(iOS)
     public func sessionDidDeactivate(_ session: WCSession) {
 
     }
+    #endif
 
     public func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
         for identifier in message.keys {
