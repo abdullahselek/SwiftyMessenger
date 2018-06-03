@@ -36,6 +36,7 @@
 		A48BFE3820C3FD9700557889 /* Sample iOS AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sample iOS AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48BFE3C20C3FD9700557889 /* Sample_iOS_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_iOS_AppTests.swift; sourceTree = "<group>"; };
 		A48BFE3E20C3FD9700557889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A48BFE4720C4011B00557889 /* Sample iOS App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sample iOS App.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		A48BFE2620C3FD9500557889 /* Sample iOS App */ = {
 			isa = PBXGroup;
 			children = (
+				A48BFE4720C4011B00557889 /* Sample iOS App.entitlements */,
 				A48BFE2720C3FD9500557889 /* AppDelegate.swift */,
 				A48BFE2920C3FD9500557889 /* ViewController.swift */,
 				A48BFE2B20C3FD9600557889 /* Main.storyboard */,
@@ -146,6 +148,11 @@
 				TargetAttributes = {
 					A48BFE2320C3FD9500557889 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A48BFE3720C3FD9700557889 = {
 						CreatedOnToolsVersion = 9.4;
@@ -358,8 +365,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Sample iOS App/Sample iOS App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5EHDAGHZ78;
 				INFOPLIST_FILE = "Sample iOS App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,8 +385,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Sample iOS App/Sample iOS App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5EHDAGHZ78;
 				INFOPLIST_FILE = "Sample iOS App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

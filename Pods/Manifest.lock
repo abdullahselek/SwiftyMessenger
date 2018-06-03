@@ -1,0 +1,16 @@
+PODS:
+  - SwiftyMessenger (0.1)
+
+DEPENDENCIES:
+  - SwiftyMessenger (from `.`)
+
+EXTERNAL SOURCES:
+  SwiftyMessenger:
+    :path: "."
+
+SPEC CHECKSUMS:
+  SwiftyMessenger: 86bd6ced3a58493538dad23595389254e2ddf2b7
+
+PODFILE CHECKSUM: f35901e9afee45af7fb37e99b5ab6b7868b0e769
+
+COCOAPODS: 1.5.0
