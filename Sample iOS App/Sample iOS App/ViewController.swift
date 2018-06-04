@@ -23,7 +23,17 @@ class ViewController: UIViewController {
 
         messenger = Messenger(withApplicationGroupIdentifier: ViewController.groupIdentifier, directory: ViewController.directory)
         messengerListeningSession = MessengerSession.shared
-        watchConnectivityMessenger = Messenger(withApplicationGroupIdentifier: ViewController.groupIdentifier, directory: ViewController.directory, transitingType: .sessionContext)
+        watchConnectivityMessenger = Messenger(withApplicationGroupIdentifier: ViewController.groupIdentifier,
+                                               directory: ViewController.directory,
+                                               transitingType: .sessionContext)
+
+        messenger.listenForMessage(withIdentifier: "button") { message in
+
+        }
+
+        watchConnectivityMessenger.listenForMessage(withIdentifier: "button") { message in
+
+        }
     }
 
 }
