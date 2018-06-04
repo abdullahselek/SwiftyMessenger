@@ -103,15 +103,8 @@ open class MessengerFileTransiting: FileTransiting {
         applicationGroupIdentifier = identifier
         self.directory = directory
         fileManager = FileManager()
-        checkAppGroupCapabilities(applicationGroupIdentifier: applicationGroupIdentifier)
     }
 
-    private func checkAppGroupCapabilities(applicationGroupIdentifier: String) {
-        if (NSClassFromString("XCTest") == nil) {
-            assert(fileManager.containerURL(forSecurityApplicationGroupIdentifier: applicationGroupIdentifier) != nil, "App Group Capabilities may not be correctly configured for your project, or your appGroupIdentifier may not match your project settings. Check Project->Capabilities->App Groups. Three checkmarks should be displayed in the steps section, and the value passed in for your appGroupIdentifier should match the setting in your project file.")
-        }
-    }
-    
     // MARK: File Operation Methods
 
     internal func messagePassingDirectoryPath() -> String? {
