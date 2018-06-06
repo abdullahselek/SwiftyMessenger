@@ -12,6 +12,7 @@ import SwiftyMessenger
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var selectedButtonLabel: UILabel!
 
     private static let groupIdentifier = "group.com.abdullahselek.swiftymessenger"
     private static let directory = "messenger"
@@ -32,11 +33,19 @@ class ViewController: UIViewController {
                                                transitingType: .sessionContext)
 
         messenger.listenForMessage(withIdentifier: "button") { message in
-
+            guard let message = message as? [String: Any] else {
+                return
+            }
+            let buttonTitle = message["buttonTitle"] as? String
+            self.selectedButtonLabel.text = buttonTitle
         }
 
         watchConnectivityMessenger.listenForMessage(withIdentifier: "button") { message in
-
+            guard let message = message as? [String: Any] else {
+                return
+            }
+            let buttonTitle = message["buttonTitle"] as? String
+            self.selectedButtonLabel.text = buttonTitle
         }
         messengerListeningSession.activateSession()
     }

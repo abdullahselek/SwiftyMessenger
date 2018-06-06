@@ -15,9 +15,21 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Sample_WatchOS_App" customModuleProvider="target">
                     <items>
                         <label width="136" height="20" alignment="left" textAlignment="center" id="ZVZ-VT-lSS"/>
-                        <button width="1" alignment="left" title="Objective-C" id="zzl-5W-15s"/>
-                        <button width="1" alignment="left" title="Swift" id="s3l-B3-4U3"/>
-                        <button width="1" alignment="left" title="Xcode" id="rMt-Nb-pKV"/>
+                        <button width="1" alignment="left" title="Objective-C" id="zzl-5W-15s">
+                            <connections>
+                                <action selector="didObjCTapWithSender:" destination="AgC-eL-Hgc" id="Dre-Qs-qta"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Swift" id="s3l-B3-4U3">
+                            <connections>
+                                <action selector="didSwiftTapWithSender:" destination="AgC-eL-Hgc" id="bvH-gH-lss"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Xcode" id="rMt-Nb-pKV">
+                            <connections>
+                                <action selector="didXcodeTapWithSender:" destination="AgC-eL-Hgc" id="uKl-c3-tCH"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="selectedCellLabel" destination="ZVZ-VT-lSS" id="gnC-JE-3Vh"/>
