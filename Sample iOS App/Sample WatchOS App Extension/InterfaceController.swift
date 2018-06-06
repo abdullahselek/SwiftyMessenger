@@ -12,17 +12,48 @@ import SwiftyMessenger
 
 class InterfaceController: WKInterfaceController {
 
+    private static let groupIdentifier = "group.com.abdullahselek.swiftymessenger"
+    private static let directory = "messenger"
+
+    private var messenger: Messenger!
+
+    @IBOutlet weak var selectedCellLabel: WKInterfaceLabel!
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
-        // Configure interface objects here.
+
+        messenger = Messenger(withApplicationGroupIdentifier: InterfaceController.groupIdentifier, directory: InterfaceController.directory)
+        if let message = messenger.messageForIdentifier(identifier: "selection") as? [String: Any] {
+            let string = message["selectedCell"] as? String
+            selectedCellLabel.setText(string)
+        }
+
+        messenger.listenForMessage(withIdentifier: "selection") { message in
+            guard let message = message as? [String: Any] else {
+                return
+            }
+            let string = message["selectedCell"] as? String
+            self.selectedCellLabel.setText(string)
+        }
     }
-    
+
+    @IBAction func didObjCTap(sender: WKInterfaceButton) {
+        messenger.passMessage(message: ["buttonTitle": "Objective-C"], identifier: "button")
+    }
+
+    @IBAction func didSwiftTap(sender: WKInterfaceButton) {
+        messenger.passMessage(message: ["buttonTitle": "Swift"], identifier: "button")
+    }
+
+    @IBAction func didXcodeTap(sender: WKInterfaceButton) {
+        messenger.passMessage(message: ["buttonTitle": "Xcode"], identifier: "button")
+    }
+
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
     }
-    
+
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
