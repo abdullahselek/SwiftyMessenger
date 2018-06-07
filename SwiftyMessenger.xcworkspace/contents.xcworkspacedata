@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Sample iOS App/Sample iOS App.xcodeproj">
+      location = "group:/Users/aselek/Repositories/SwiftyMessenger/SwiftyMessenger.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:/Users/abdullahselek/Repositories/SwiftyMessenger/SwiftyMessenger.xcodeproj">
+      location = "group:Sample iOS App/Sample iOS App.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

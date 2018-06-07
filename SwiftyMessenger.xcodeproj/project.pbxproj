@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A44DE61A20C40D9E001426F3 /* SwiftyMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44DE61120C40D9D001426F3 /* SwiftyMessenger.framework */; };
-		A44DE61F20C40D9E001426F3 /* SwiftyMessenger_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DE61E20C40D9E001426F3 /* SwiftyMessenger_iOSTests.swift */; };
-		A4FEC13220C410940046E9CB /* SwiftyMessenger.h in Headers */ = {isa = PBXBuildFile; fileRef = A4FAA04520AB580300872314 /* SwiftyMessenger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8381FDAA20C9432D0048087C /* SwiftyMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8381FDA120C9432D0048087C /* SwiftyMessenger.framework */; };
+		8381FDAF20C9432D0048087C /* SwiftyMessenger_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8381FDAE20C9432D0048087C /* SwiftyMessenger_iOSTests.swift */; };
+		8381FDB820C943EB0048087C /* MessengerFileTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FAA05C20AB5A0300872314 /* MessengerFileTransiting.swift */; };
+		8381FDB920C943EB0048087C /* MessengerCoordinatedFileTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836BFBA520B313A5006734CD /* MessengerCoordinatedFileTransiting.swift */; };
+		8381FDBA20C943EB0048087C /* MessengerSessionContextTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A419412220B35AA60036599D /* MessengerSessionContextTransiting.swift */; };
+		8381FDBB20C943EB0048087C /* MessengerSessionFileTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A663B20B5B58F003522F8 /* MessengerSessionFileTransiting.swift */; };
+		8381FDBC20C943EB0048087C /* MessengerSessionMessageTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A663920B5B1A5003522F8 /* MessengerSessionMessageTransiting.swift */; };
+		8381FDBD20C943EB0048087C /* MessengerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47DE5C020B9628A00CFBB53 /* MessengerSession.swift */; };
+		8381FDBE20C943EB0048087C /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47DE5C220B96A2C00CFBB53 /* Messenger.swift */; };
+		8381FDBF20C943EB0048087C /* String+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A663D20B5BB38003522F8 /* String+Path.swift */; };
+		8381FDC020C943F20048087C /* SwiftyMessenger.h in Headers */ = {isa = PBXBuildFile; fileRef = A4FAA04520AB580300872314 /* SwiftyMessenger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4FEC13320C4109F0046E9CB /* SwiftyMessenger.h in Headers */ = {isa = PBXBuildFile; fileRef = A4FAA04520AB580300872314 /* SwiftyMessenger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4FEC13420C43F460046E9CB /* MessengerFileTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FAA05C20AB5A0300872314 /* MessengerFileTransiting.swift */; };
-		A4FEC13520C43F460046E9CB /* MessengerCoordinatedFileTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836BFBA520B313A5006734CD /* MessengerCoordinatedFileTransiting.swift */; };
-		A4FEC13620C43F460046E9CB /* MessengerSessionContextTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A419412220B35AA60036599D /* MessengerSessionContextTransiting.swift */; };
-		A4FEC13720C43F460046E9CB /* MessengerSessionFileTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A663B20B5B58F003522F8 /* MessengerSessionFileTransiting.swift */; };
-		A4FEC13820C43F460046E9CB /* MessengerSessionMessageTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A663920B5B1A5003522F8 /* MessengerSessionMessageTransiting.swift */; };
-		A4FEC13920C43F460046E9CB /* MessengerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47DE5C020B9628A00CFBB53 /* MessengerSession.swift */; };
-		A4FEC13A20C43F460046E9CB /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47DE5C220B96A2C00CFBB53 /* Messenger.swift */; };
-		A4FEC13B20C43F460046E9CB /* String+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A663D20B5BB38003522F8 /* String+Path.swift */; };
 		A4FEC13C20C43F4F0046E9CB /* MessengerFileTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FAA05C20AB5A0300872314 /* MessengerFileTransiting.swift */; };
 		A4FEC13D20C43F4F0046E9CB /* MessengerCoordinatedFileTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836BFBA520B313A5006734CD /* MessengerCoordinatedFileTransiting.swift */; };
 		A4FEC13E20C43F4F0046E9CB /* MessengerSessionContextTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A419412220B35AA60036599D /* MessengerSessionContextTransiting.swift */; };
@@ -30,27 +30,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A44DE61B20C40D9E001426F3 /* PBXContainerItemProxy */ = {
+		8381FDAB20C9432D0048087C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A4FAA03920AB580300872314 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A44DE61020C40D9D001426F3;
-			remoteInfo = "SwiftyMessenger iOS";
+			remoteGlobalIDString = 8381FDA020C9432D0048087C;
+			remoteInfo = "SwiftyMessenger-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		836BFBA520B313A5006734CD /* MessengerCoordinatedFileTransiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerCoordinatedFileTransiting.swift; sourceTree = "<group>"; };
+		8381FDA120C9432D0048087C /* SwiftyMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8381FDA920C9432D0048087C /* SwiftyMessenger-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyMessenger-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8381FDAE20C9432D0048087C /* SwiftyMessenger_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyMessenger_iOSTests.swift; sourceTree = "<group>"; };
+		8381FDB020C9432D0048087C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A40A663920B5B1A5003522F8 /* MessengerSessionMessageTransiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerSessionMessageTransiting.swift; sourceTree = "<group>"; };
 		A40A663B20B5B58F003522F8 /* MessengerSessionFileTransiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerSessionFileTransiting.swift; sourceTree = "<group>"; };
 		A40A663D20B5BB38003522F8 /* String+Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Path.swift"; sourceTree = "<group>"; };
 		A419412220B35AA60036599D /* MessengerSessionContextTransiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerSessionContextTransiting.swift; sourceTree = "<group>"; };
 		A44DE60420C40CEE001426F3 /* SwiftyMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44DE60720C40CEE001426F3 /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
-		A44DE61120C40D9D001426F3 /* SwiftyMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A44DE61920C40D9E001426F3 /* SwiftyMessenger iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyMessenger iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A44DE61E20C40D9E001426F3 /* SwiftyMessenger_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyMessenger_iOSTests.swift; sourceTree = "<group>"; };
-		A44DE62020C40D9E001426F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A47DE5C020B9628A00CFBB53 /* MessengerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerSession.swift; sourceTree = "<group>"; };
 		A47DE5C220B96A2C00CFBB53 /* Messenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
 		A4FAA04520AB580300872314 /* SwiftyMessenger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyMessenger.h; sourceTree = "<group>"; };
@@ -59,6 +59,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8381FD9D20C9432D0048087C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8381FDA620C9432D0048087C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8381FDAA20C9432D0048087C /* SwiftyMessenger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A44DE60020C40CEE001426F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,38 +81,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A44DE60D20C40D9D001426F3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A44DE61620C40D9E001426F3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A44DE61A20C40D9E001426F3 /* SwiftyMessenger.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A44DE61D20C40D9E001426F3 /* SwiftyMessenger iOSTests */ = {
+		8381FDAD20C9432D0048087C /* SwiftyMessenger-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				A44DE61E20C40D9E001426F3 /* SwiftyMessenger_iOSTests.swift */,
-				A44DE62020C40D9E001426F3 /* Info.plist */,
+				8381FDAE20C9432D0048087C /* SwiftyMessenger_iOSTests.swift */,
+				8381FDB020C9432D0048087C /* Info.plist */,
 			);
-			path = "SwiftyMessenger iOSTests";
+			path = "SwiftyMessenger-iOSTests";
 			sourceTree = "<group>";
 		};
 		A4FAA03820AB580300872314 = {
 			isa = PBXGroup;
 			children = (
 				A4FAA04420AB580300872314 /* Source */,
-				A44DE61D20C40D9E001426F3 /* SwiftyMessenger iOSTests */,
+				8381FDAD20C9432D0048087C /* SwiftyMessenger-iOSTests */,
 				A4FAA04320AB580300872314 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,8 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				A44DE60420C40CEE001426F3 /* SwiftyMessenger.framework */,
-				A44DE61120C40D9D001426F3 /* SwiftyMessenger.framework */,
-				A44DE61920C40D9E001426F3 /* SwiftyMessenger iOSTests.xctest */,
+				8381FDA120C9432D0048087C /* SwiftyMessenger.framework */,
+				8381FDA920C9432D0048087C /* SwiftyMessenger-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +133,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		8381FD9E20C9432D0048087C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8381FDC020C943F20048087C /* SwiftyMessenger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A44DE60120C40CEE001426F3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,20 +149,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A44DE60E20C40D9D001426F3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4FEC13220C410940046E9CB /* SwiftyMessenger.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A44DE60320C40CEE001426F3 /* SwiftyMessenger watchOS */ = {
+		8381FDA020C9432D0048087C /* SwiftyMessenger-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A44DE60920C40CEE001426F3 /* Build configuration list for PBXNativeTarget "SwiftyMessenger watchOS" */;
+			buildConfigurationList = 8381FDB220C9432D0048087C /* Build configuration list for PBXNativeTarget "SwiftyMessenger-iOS" */;
+			buildPhases = (
+				8381FD9C20C9432D0048087C /* Sources */,
+				8381FD9D20C9432D0048087C /* Frameworks */,
+				8381FD9E20C9432D0048087C /* Headers */,
+				8381FD9F20C9432D0048087C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftyMessenger-iOS";
+			productName = "SwiftyMessenger-iOS";
+			productReference = 8381FDA120C9432D0048087C /* SwiftyMessenger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8381FDA820C9432D0048087C /* SwiftyMessenger-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8381FDB520C9432D0048087C /* Build configuration list for PBXNativeTarget "SwiftyMessenger-iOSTests" */;
+			buildPhases = (
+				8381FDA520C9432D0048087C /* Sources */,
+				8381FDA620C9432D0048087C /* Frameworks */,
+				8381FDA720C9432D0048087C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8381FDAC20C9432D0048087C /* PBXTargetDependency */,
+			);
+			name = "SwiftyMessenger-iOSTests";
+			productName = "SwiftyMessenger-iOSTests";
+			productReference = 8381FDA920C9432D0048087C /* SwiftyMessenger-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A44DE60320C40CEE001426F3 /* SwiftyMessenger-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A44DE60920C40CEE001426F3 /* Build configuration list for PBXNativeTarget "SwiftyMessenger-watchOS" */;
 			buildPhases = (
 				A44DE5FF20C40CEE001426F3 /* Sources */,
 				A44DE60020C40CEE001426F3 /* Frameworks */,
@@ -165,46 +201,10 @@
 			);
 			dependencies = (
 			);
-			name = "SwiftyMessenger watchOS";
+			name = "SwiftyMessenger-watchOS";
 			productName = "SwiftyMessenger watchOS";
 			productReference = A44DE60420C40CEE001426F3 /* SwiftyMessenger.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		A44DE61020C40D9D001426F3 /* SwiftyMessenger iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A44DE62220C40D9E001426F3 /* Build configuration list for PBXNativeTarget "SwiftyMessenger iOS" */;
-			buildPhases = (
-				A44DE60C20C40D9D001426F3 /* Sources */,
-				A44DE60D20C40D9D001426F3 /* Frameworks */,
-				A44DE60E20C40D9D001426F3 /* Headers */,
-				A44DE60F20C40D9D001426F3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "SwiftyMessenger iOS";
-			productName = "SwiftyMessenger iOS";
-			productReference = A44DE61120C40D9D001426F3 /* SwiftyMessenger.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A44DE61820C40D9E001426F3 /* SwiftyMessenger iOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A44DE62520C40D9E001426F3 /* Build configuration list for PBXNativeTarget "SwiftyMessenger iOSTests" */;
-			buildPhases = (
-				A44DE61520C40D9E001426F3 /* Sources */,
-				A44DE61620C40D9E001426F3 /* Frameworks */,
-				A44DE61720C40D9E001426F3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A44DE61C20C40D9E001426F3 /* PBXTargetDependency */,
-			);
-			name = "SwiftyMessenger iOSTests";
-			productName = "SwiftyMessenger iOSTests";
-			productReference = A44DE61920C40D9E001426F3 /* SwiftyMessenger iOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -216,13 +216,13 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Abdullah Selek";
 				TargetAttributes = {
+					8381FDA020C9432D0048087C = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					8381FDA820C9432D0048087C = {
+						CreatedOnToolsVersion = 9.4;
+					};
 					A44DE60320C40CEE001426F3 = {
-						CreatedOnToolsVersion = 9.4;
-					};
-					A44DE61020C40D9D001426F3 = {
-						CreatedOnToolsVersion = 9.4;
-					};
-					A44DE61820C40D9E001426F3 = {
 						CreatedOnToolsVersion = 9.4;
 					};
 				};
@@ -239,29 +239,29 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A44DE61020C40D9D001426F3 /* SwiftyMessenger iOS */,
-				A44DE61820C40D9E001426F3 /* SwiftyMessenger iOSTests */,
-				A44DE60320C40CEE001426F3 /* SwiftyMessenger watchOS */,
+				8381FDA020C9432D0048087C /* SwiftyMessenger-iOS */,
+				8381FDA820C9432D0048087C /* SwiftyMessenger-iOSTests */,
+				A44DE60320C40CEE001426F3 /* SwiftyMessenger-watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8381FD9F20C9432D0048087C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8381FDA720C9432D0048087C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A44DE60220C40CEE001426F3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A44DE60F20C40D9D001426F3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A44DE61720C40D9E001426F3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -271,6 +271,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8381FD9C20C9432D0048087C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8381FDB820C943EB0048087C /* MessengerFileTransiting.swift in Sources */,
+				8381FDB920C943EB0048087C /* MessengerCoordinatedFileTransiting.swift in Sources */,
+				8381FDBA20C943EB0048087C /* MessengerSessionContextTransiting.swift in Sources */,
+				8381FDBB20C943EB0048087C /* MessengerSessionFileTransiting.swift in Sources */,
+				8381FDBC20C943EB0048087C /* MessengerSessionMessageTransiting.swift in Sources */,
+				8381FDBD20C943EB0048087C /* MessengerSession.swift in Sources */,
+				8381FDBE20C943EB0048087C /* Messenger.swift in Sources */,
+				8381FDBF20C943EB0048087C /* String+Path.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8381FDA520C9432D0048087C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8381FDAF20C9432D0048087C /* SwiftyMessenger_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A44DE5FF20C40CEE001426F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,40 +309,109 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A44DE60C20C40D9D001426F3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4FEC13420C43F460046E9CB /* MessengerFileTransiting.swift in Sources */,
-				A4FEC13520C43F460046E9CB /* MessengerCoordinatedFileTransiting.swift in Sources */,
-				A4FEC13620C43F460046E9CB /* MessengerSessionContextTransiting.swift in Sources */,
-				A4FEC13720C43F460046E9CB /* MessengerSessionFileTransiting.swift in Sources */,
-				A4FEC13820C43F460046E9CB /* MessengerSessionMessageTransiting.swift in Sources */,
-				A4FEC13920C43F460046E9CB /* MessengerSession.swift in Sources */,
-				A4FEC13A20C43F460046E9CB /* Messenger.swift in Sources */,
-				A4FEC13B20C43F460046E9CB /* String+Path.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A44DE61520C40D9E001426F3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A44DE61F20C40D9E001426F3 /* SwiftyMessenger_iOSTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A44DE61C20C40D9E001426F3 /* PBXTargetDependency */ = {
+		8381FDAC20C9432D0048087C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A44DE61020C40D9D001426F3 /* SwiftyMessenger iOS */;
-			targetProxy = A44DE61B20C40D9E001426F3 /* PBXContainerItemProxy */;
+			target = 8381FDA020C9432D0048087C /* SwiftyMessenger-iOS */;
+			targetProxy = 8381FDAB20C9432D0048087C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		8381FDB320C9432D0048087C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5EHDAGHZ78;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Source/Info-iOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahselek.SwiftyMessenger-iOS";
+				PRODUCT_NAME = SwiftyMessenger;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8381FDB420C9432D0048087C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5EHDAGHZ78;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Source/Info-iOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahselek.SwiftyMessenger-iOS";
+				PRODUCT_NAME = SwiftyMessenger;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8381FDB620C9432D0048087C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5EHDAGHZ78;
+				INFOPLIST_FILE = "SwiftyMessenger-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahselek.SwiftyMessenger-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8381FDB720C9432D0048087C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5EHDAGHZ78;
+				INFOPLIST_FILE = "SwiftyMessenger-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahselek.SwiftyMessenger-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A44DE60A20C40CEE001426F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -371,98 +463,6 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		A44DE62320C40D9E001426F3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Source/Info-iOS.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahselek.SwiftyMessenger-iOS";
-				PRODUCT_NAME = SwiftyMessenger;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 armv7 armv7s";
-			};
-			name = Debug;
-		};
-		A44DE62420C40D9E001426F3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Source/Info-iOS.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahselek.SwiftyMessenger-iOS";
-				PRODUCT_NAME = SwiftyMessenger;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 armv7 armv7s";
-			};
-			name = Release;
-		};
-		A44DE62620C40D9E001426F3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "SwiftyMessenger iOSTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahselek.SwiftyMessenger-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A44DE62720C40D9E001426F3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "SwiftyMessenger iOSTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahselek.SwiftyMessenger-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -591,29 +591,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A44DE60920C40CEE001426F3 /* Build configuration list for PBXNativeTarget "SwiftyMessenger watchOS" */ = {
+		8381FDB220C9432D0048087C /* Build configuration list for PBXNativeTarget "SwiftyMessenger-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8381FDB320C9432D0048087C /* Debug */,
+				8381FDB420C9432D0048087C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8381FDB520C9432D0048087C /* Build configuration list for PBXNativeTarget "SwiftyMessenger-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8381FDB620C9432D0048087C /* Debug */,
+				8381FDB720C9432D0048087C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A44DE60920C40CEE001426F3 /* Build configuration list for PBXNativeTarget "SwiftyMessenger-watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A44DE60A20C40CEE001426F3 /* Debug */,
 				A44DE60B20C40CEE001426F3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A44DE62220C40D9E001426F3 /* Build configuration list for PBXNativeTarget "SwiftyMessenger iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A44DE62320C40D9E001426F3 /* Debug */,
-				A44DE62420C40D9E001426F3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A44DE62520C40D9E001426F3 /* Build configuration list for PBXNativeTarget "SwiftyMessenger iOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A44DE62620C40D9E001426F3 /* Debug */,
-				A44DE62720C40D9E001426F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

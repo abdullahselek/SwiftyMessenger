@@ -16,9 +16,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A44DE61820C40D9E001426F3"
-               BuildableName = "SwiftyMessenger iOSTests.xctest"
-               BlueprintName = "SwiftyMessenger iOSTests"
+               BlueprintIdentifier = "8381FDA820C9432D0048087C"
+               BuildableName = "SwiftyMessenger-iOSTests.xctest"
+               BlueprintName = "SwiftyMessenger-iOSTests"
                ReferencedContainer = "container:SwiftyMessenger.xcodeproj">
             </BuildableReference>
          </TestableReference>
