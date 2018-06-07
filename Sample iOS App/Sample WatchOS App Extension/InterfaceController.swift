@@ -15,6 +15,7 @@ class InterfaceController: WKInterfaceController {
     private static let groupIdentifier = "group.com.abdullahselek.swiftymessenger"
     private static let directory = "messenger"
 
+    private var messengerSession: MessengerSession!
     private var messenger: Messenger!
 
     @IBOutlet weak var selectedCellLabel: WKInterfaceLabel!
@@ -22,7 +23,11 @@ class InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
 
-        messenger = Messenger(withApplicationGroupIdentifier: InterfaceController.groupIdentifier, directory: InterfaceController.directory)
+        messengerSession = MessengerSession.shared
+        messenger = Messenger(withApplicationGroupIdentifier: InterfaceController.groupIdentifier,
+                              directory: InterfaceController.directory,
+                              transitingType: .sessionContext)
+
         if let message = messenger.messageForIdentifier(identifier: "selection") as? [String: Any] {
             let string = message["selectedCell"] as? String
             selectedCellLabel.setText(string)
@@ -35,6 +40,7 @@ class InterfaceController: WKInterfaceController {
             let string = message["selectedCell"] as? String
             self.selectedCellLabel.setText(string)
         }
+        messengerSession.activateSession()
     }
 
     @IBAction func didObjCTap(sender: WKInterfaceButton) {
