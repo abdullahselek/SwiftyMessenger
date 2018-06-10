@@ -50,6 +50,20 @@ class ViewController: UIViewController {
         messengerListeningSession.activateSession()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        if let message = messenger.messageForIdentifier(identifier: "button") as? [String: Any] {
+            let buttonTitle = message["buttonTitle"] as? String
+            self.selectedButtonLabel.text = buttonTitle
+        }
+    
+        if let message = watchConnectivityMessenger.messageForIdentifier(identifier: "button") as? [String: Any] {
+            let buttonTitle = message["buttonTitle"] as? String
+            self.selectedButtonLabel.text = buttonTitle
+        }
+    }
+
 }
 
 extension ViewController: UITableViewDataSource {
