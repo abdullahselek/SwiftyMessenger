@@ -40,7 +40,7 @@ class ViewController: UIViewController {
             self.selectedButtonLabel.text = buttonTitle
         }
 
-        watchConnectivityMessenger.listenForMessage(withIdentifier: "button") { message in
+        messengerListeningSession.listenForMessage(withIdentifier: "button") { message in
             guard let message = message as? [String: Any] else {
                 return
             }
