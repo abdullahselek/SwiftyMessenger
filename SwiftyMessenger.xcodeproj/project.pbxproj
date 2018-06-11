@@ -435,6 +435,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
+				VALID_ARCHS = armv7k;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -462,6 +463,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
+				VALID_ARCHS = armv7k;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
