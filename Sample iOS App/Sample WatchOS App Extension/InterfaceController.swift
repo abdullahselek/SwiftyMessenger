@@ -33,7 +33,7 @@ class InterfaceController: WKInterfaceController {
             selectedCellLabel.setText(string)
         }
 
-        messenger.listenForMessage(withIdentifier: "selection") { message in
+        messengerSession.listenForMessage(withIdentifier: "selection") { message in
             guard let message = message as? [String: Any] else {
                 return
             }
