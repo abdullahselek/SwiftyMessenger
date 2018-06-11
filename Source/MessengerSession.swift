@@ -41,6 +41,34 @@ open class MessengerSession: NSObject {
         session.activate()
     }
 
+    open func notifyListenerForMessage(withIdentifier identifier: String?, message: Any?) {
+        messenger.notifyListenerForMessage(withIdentifier: identifier, message: message)
+    }
+
+    open func passMessage(message: Any?, identifier: String?) {
+        messenger.passMessage(message: message, identifier: identifier)
+    }
+
+    open func messageForIdentifier(identifier: String?) -> Any? {
+        return messenger.messageForIdentifier(identifier: identifier)
+    }
+
+    open func clearMessageContents(identifer: String?) {
+        messenger.clearMessageContents(identifer: identifer)
+    }
+
+    open func clearAllMessageContents() {
+        messenger.clearAllMessageContents()
+    }
+
+    open func listenForMessage(withIdentifier identifier: String?, listener: @escaping ((Any) -> Void)) {
+        messenger.listenForMessage(withIdentifier: identifier, listener: listener)
+    }
+
+    open func stopListeningForMessage(withIdentifier identifier: String?) {
+        messenger.stopListeningForMessage(withIdentifier: identifier)
+    }
+
 }
 
 extension MessengerSession: WCSessionDelegate {
