@@ -1,7 +1,7 @@
 # .slather.yml
 
 coverage_service: cobertura_xml
-workspace: SwiftyMessenger.xcodeworkspace
+workspace: SwiftyMessenger.xcworkspace
 xcodeproj: SwiftyMessenger.xcodeproj
 scheme: SwiftyMessenger
 configuration: Debug
