@@ -106,11 +106,11 @@ Here are two little notes you need to know if you want to use WatchConnectivity 
 
 You can find 5 available types under **TransitingType**.
 
-- file (Message transiting by archiving and unarchiving messages that are written and read to files)
-- coordinatedFile (Uses FileCoordinator)
-- sessionContext (Support for the WatchConnectivity framework's Application Context)
-- sessionMessage (Support for the WatchConnectivity framework's real time message passing ability)
-- sessionFile (Support for the WatchConnectivity framework's file transfer ability)
+- `file` (Message transiting by archiving and unarchiving messages that are written and read to files)
+- `coordinatedFile` (Uses FileCoordinator)
+- `sessionContext` (Support for the WatchConnectivity framework's Application Context)
+- `sessionMessage` (Support for the WatchConnectivity framework's real time message passing ability)
+- `sessionFile` (Support for the WatchConnectivity framework's file transfer ability)
 
 ## License
 
