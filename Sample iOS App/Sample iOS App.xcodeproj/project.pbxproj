@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8267D60C35BB0C392542FA11 /* Pods_Sample_WatchOS_App_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB0F8FE5AEFD8431CAF91B0 /* Pods_Sample_WatchOS_App_Extension.framework */; };
+		A422D50520FD26230075319F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A422D50420FD26230075319F /* NotificationCenter.framework */; };
+		A422D50820FD26230075319F /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A422D50720FD26230075319F /* TodayViewController.swift */; };
+		A422D50B20FD26230075319F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A422D50920FD26230075319F /* MainInterface.storyboard */; };
+		A422D50F20FD26230075319F /* Sample Today Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A422D50320FD26230075319F /* Sample Today Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A48BFE2820C3FD9500557889 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BFE2720C3FD9500557889 /* AppDelegate.swift */; };
 		A48BFE2A20C3FD9500557889 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48BFE2920C3FD9500557889 /* ViewController.swift */; };
 		A48BFE2D20C3FD9600557889 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48BFE2B20C3FD9600557889 /* Main.storyboard */; };
@@ -25,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A422D50D20FD26230075319F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A48BFE1C20C3FD9500557889 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A422D50220FD26230075319F;
+			remoteInfo = "Sample Today Extension";
+		};
 		A48BFE3920C3FD9700557889 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A48BFE1C20C3FD9500557889 /* Project object */;
@@ -49,6 +60,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		A422D51320FD26230075319F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A422D50F20FD26230075319F /* Sample Today Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A48BFE6820C4031800557889 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,6 +101,11 @@
 		4CB0F8FE5AEFD8431CAF91B0 /* Pods_Sample_WatchOS_App_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_WatchOS_App_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		643357F188B67233D6BA62C8 /* Pods-Sample WatchOS App Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample WatchOS App Extension.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Sample WatchOS App Extension/Pods-Sample WatchOS App Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		6F0C163953D7D1118FCAF026 /* Pods-Sample WatchOS App Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample WatchOS App Extension.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Sample WatchOS App Extension/Pods-Sample WatchOS App Extension.release.xcconfig"; sourceTree = "<group>"; };
+		A422D50320FD26230075319F /* Sample Today Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Sample Today Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A422D50420FD26230075319F /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		A422D50720FD26230075319F /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		A422D50A20FD26230075319F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A422D50C20FD26230075319F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A48BFE2420C3FD9500557889 /* Sample iOS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample iOS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48BFE2720C3FD9500557889 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A48BFE2920C3FD9500557889 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +136,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A422D50020FD26230075319F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A422D50520FD26230075319F /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +184,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A422D50620FD26230075319F /* Sample Today Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A422D50720FD26230075319F /* TodayViewController.swift */,
+				A422D50920FD26230075319F /* MainInterface.storyboard */,
+				A422D50C20FD26230075319F /* Info.plist */,
+			);
+			path = "Sample Today Extension";
+			sourceTree = "<group>";
+		};
 		A48BFE1B20C3FD9500557889 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +201,7 @@
 				A48BFE3B20C3FD9700557889 /* Sample iOS AppTests */,
 				A48BFE4B20C4031600557889 /* Sample WatchOS App */,
 				A48BFE5A20C4031700557889 /* Sample WatchOS App Extension */,
+				A422D50620FD26230075319F /* Sample Today Extension */,
 				A48BFE2520C3FD9500557889 /* Products */,
 				598914E7DFDE7B75ACEF15D0 /* Pods */,
 				ACE5DF6332B99AFA3D206480 /* Frameworks */,
@@ -169,6 +215,7 @@
 				A48BFE3820C3FD9700557889 /* Sample iOS AppTests.xctest */,
 				A48BFE4A20C4031600557889 /* Sample WatchOS App.app */,
 				A48BFE5620C4031700557889 /* Sample WatchOS App Extension.appex */,
+				A422D50320FD26230075319F /* Sample Today Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,6 +271,7 @@
 				4CB0F8FE5AEFD8431CAF91B0 /* Pods_Sample_WatchOS_App_Extension.framework */,
 				00E69F9025EC1DA7CF2D9C2F /* Pods_Sample_iOS_App.framework */,
 				0CAFCCFF41F03088EA4071B2 /* Pods_Sample_WatchOS_App.framework */,
+				A422D50420FD26230075319F /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,6 +279,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A422D50220FD26230075319F /* Sample Today Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A422D51220FD26230075319F /* Build configuration list for PBXNativeTarget "Sample Today Extension" */;
+			buildPhases = (
+				A422D4FF20FD26230075319F /* Sources */,
+				A422D50020FD26230075319F /* Frameworks */,
+				A422D50120FD26230075319F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sample Today Extension";
+			productName = "Sample Today Extension";
+			productReference = A422D50320FD26230075319F /* Sample Today Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		A48BFE2320C3FD9500557889 /* Sample iOS App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A48BFE4120C3FD9700557889 /* Build configuration list for PBXNativeTarget "Sample iOS App" */;
@@ -241,11 +306,13 @@
 				A48BFE2220C3FD9500557889 /* Resources */,
 				A48BFE6C20C4031800557889 /* Embed Watch Content */,
 				60ADDF843A840DB3989AF12F /* [CP] Embed Pods Frameworks */,
+				A422D51320FD26230075319F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				A48BFE6320C4031800557889 /* PBXTargetDependency */,
+				A422D50E20FD26230075319F /* PBXTargetDependency */,
 			);
 			name = "Sample iOS App";
 			productName = "Sample iOS App";
@@ -317,6 +384,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Abdullah Selek";
 				TargetAttributes = {
+					A422D50220FD26230075319F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					A48BFE2320C3FD9500557889 = {
 						CreatedOnToolsVersion = 9.4;
 						SystemCapabilities = {
@@ -359,11 +429,20 @@
 				A48BFE3720C3FD9700557889 /* Sample iOS AppTests */,
 				A48BFE4920C4031600557889 /* Sample WatchOS App */,
 				A48BFE5520C4031700557889 /* Sample WatchOS App Extension */,
+				A422D50220FD26230075319F /* Sample Today Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A422D50120FD26230075319F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A422D50B20FD26230075319F /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A48BFE2220C3FD9500557889 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -476,6 +555,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A422D4FF20FD26230075319F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A422D50820FD26230075319F /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A48BFE2020C3FD9500557889 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -505,6 +592,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A422D50E20FD26230075319F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A422D50220FD26230075319F /* Sample Today Extension */;
+			targetProxy = A422D50D20FD26230075319F /* PBXContainerItemProxy */;
+		};
 		A48BFE3A20C3FD9700557889 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A48BFE2320C3FD9500557889 /* Sample iOS App */;
@@ -523,6 +615,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A422D50920FD26230075319F /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A422D50A20FD26230075319F /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		A48BFE2B20C3FD9600557889 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -550,6 +650,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A422D51020FD26230075319F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5EHDAGHZ78;
+				INFOPLIST_FILE = "Sample Today Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahselek.Sample-iOS-App.Sample-Today-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A422D51120FD26230075319F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5EHDAGHZ78;
+				INFOPLIST_FILE = "Sample Today Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahselek.Sample-iOS-App.Sample-Today-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A48BFE3F20C3FD9700557889 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -668,6 +808,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FCBE014F9DFBAFA395BF1FA0 /* Pods-Sample iOS App.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Sample iOS App/Sample iOS App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -689,6 +830,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CF4068937DFAAA39BD261224 /* Pods-Sample iOS App.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Sample iOS App/Sample iOS App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -833,6 +975,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A422D51220FD26230075319F /* Build configuration list for PBXNativeTarget "Sample Today Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A422D51020FD26230075319F /* Debug */,
+				A422D51120FD26230075319F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A48BFE1F20C3FD9500557889 /* Build configuration list for PBXProject "Sample iOS App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
