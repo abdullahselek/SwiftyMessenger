@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		613807B32C48FD981147532A /* Pods_Sample_Today_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B3B8E9227D1194A9C8C2FC /* Pods_Sample_Today_Extension.framework */; };
 		8267D60C35BB0C392542FA11 /* Pods_Sample_WatchOS_App_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB0F8FE5AEFD8431CAF91B0 /* Pods_Sample_WatchOS_App_Extension.framework */; };
 		A422D50520FD26230075319F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A422D50420FD26230075319F /* NotificationCenter.framework */; };
 		A422D50820FD26230075319F /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A422D50720FD26230075319F /* TodayViewController.swift */; };
@@ -98,9 +99,11 @@
 /* Begin PBXFileReference section */
 		00E69F9025EC1DA7CF2D9C2F /* Pods_Sample_iOS_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_iOS_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CAFCCFF41F03088EA4071B2 /* Pods_Sample_WatchOS_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_WatchOS_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C07A44182E22674FA7D6D25 /* Pods-Sample Today Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample Today Extension.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Sample Today Extension/Pods-Sample Today Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		4CB0F8FE5AEFD8431CAF91B0 /* Pods_Sample_WatchOS_App_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_WatchOS_App_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		643357F188B67233D6BA62C8 /* Pods-Sample WatchOS App Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample WatchOS App Extension.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Sample WatchOS App Extension/Pods-Sample WatchOS App Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		6F0C163953D7D1118FCAF026 /* Pods-Sample WatchOS App Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample WatchOS App Extension.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Sample WatchOS App Extension/Pods-Sample WatchOS App Extension.release.xcconfig"; sourceTree = "<group>"; };
+		9CE168CD09A75B85DBD4AC62 /* Pods-Sample Today Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample Today Extension.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Sample Today Extension/Pods-Sample Today Extension.release.xcconfig"; sourceTree = "<group>"; };
 		A422D50320FD26230075319F /* Sample Today Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Sample Today Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A422D50420FD26230075319F /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		A422D50720FD26230075319F /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 		A48BFE5F20C4031800557889 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A48BFE6120C4031800557889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A48BFE6D20C4035400557889 /* Sample WatchOS App Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sample WatchOS App Extension.entitlements"; sourceTree = "<group>"; };
+		A4B3B8E9227D1194A9C8C2FC /* Pods_Sample_Today_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_Today_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4068937DFAAA39BD261224 /* Pods-Sample iOS App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample iOS App.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Sample iOS App/Pods-Sample iOS App.release.xcconfig"; sourceTree = "<group>"; };
 		FCBE014F9DFBAFA395BF1FA0 /* Pods-Sample iOS App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample iOS App.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Sample iOS App/Pods-Sample iOS App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A422D50520FD26230075319F /* NotificationCenter.framework in Frameworks */,
+				613807B32C48FD981147532A /* Pods_Sample_Today_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +186,8 @@
 				CF4068937DFAAA39BD261224 /* Pods-Sample iOS App.release.xcconfig */,
 				643357F188B67233D6BA62C8 /* Pods-Sample WatchOS App Extension.debug.xcconfig */,
 				6F0C163953D7D1118FCAF026 /* Pods-Sample WatchOS App Extension.release.xcconfig */,
+				2C07A44182E22674FA7D6D25 /* Pods-Sample Today Extension.debug.xcconfig */,
+				9CE168CD09A75B85DBD4AC62 /* Pods-Sample Today Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -274,6 +281,7 @@
 				00E69F9025EC1DA7CF2D9C2F /* Pods_Sample_iOS_App.framework */,
 				0CAFCCFF41F03088EA4071B2 /* Pods_Sample_WatchOS_App.framework */,
 				A422D50420FD26230075319F /* NotificationCenter.framework */,
+				A4B3B8E9227D1194A9C8C2FC /* Pods_Sample_Today_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -285,6 +293,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A422D51220FD26230075319F /* Build configuration list for PBXNativeTarget "Sample Today Extension" */;
 			buildPhases = (
+				EA9DA8A0DF6B39EFFABB296A /* [CP] Check Pods Manifest.lock */,
 				A422D4FF20FD26230075319F /* Sources */,
 				A422D50020FD26230075319F /* Frameworks */,
 				A422D50120FD26230075319F /* Resources */,
@@ -541,6 +550,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EA9DA8A0DF6B39EFFABB296A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sample Today Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F8AB404083992A70815B58EA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -659,12 +686,14 @@
 /* Begin XCBuildConfiguration section */
 		A422D51020FD26230075319F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C07A44182E22674FA7D6D25 /* Pods-Sample Today Extension.debug.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = "Sample Today Extension/Sample Today Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5EHDAGHZ78;
 				INFOPLIST_FILE = "Sample Today Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -680,12 +709,14 @@
 		};
 		A422D51120FD26230075319F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CE168CD09A75B85DBD4AC62 /* Pods-Sample Today Extension.release.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = "Sample Today Extension/Sample Today Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5EHDAGHZ78;
 				INFOPLIST_FILE = "Sample Today Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -817,7 +848,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FCBE014F9DFBAFA395BF1FA0 /* Pods-Sample iOS App.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Sample iOS App/Sample iOS App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -839,7 +869,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CF4068937DFAAA39BD261224 /* Pods-Sample iOS App.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Sample iOS App/Sample iOS App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -901,6 +930,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 643357F188B67233D6BA62C8 /* Pods-Sample WatchOS App Extension.debug.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Sample WatchOS App Extension/Sample WatchOS App Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -925,6 +955,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6F0C163953D7D1118FCAF026 /* Pods-Sample WatchOS App Extension.release.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Sample WatchOS App Extension/Sample WatchOS App Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;

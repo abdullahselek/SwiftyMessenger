@@ -20,3 +20,11 @@ target 'Sample WatchOS App Extension' do
     inherit! :search_paths
     product_pods
 end
+
+target 'Sample Today Extension' do
+	platform :ios, '9.0'
+	project 'Sample iOS App/Sample iOS App.xcodeproj'
+	use_frameworks!
+    inherit! :search_paths
+    product_pods
+end

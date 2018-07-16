@@ -12,11 +12,11 @@
 		11C0A8B75006AF77D479E2DEF119D0B2 /* String+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E4BA6BFA088F7BFC3BAED6573090FA /* String+Path.swift */; };
 		1AA3FA0472957269584E0FD049CB1258 /* MessengerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC78FADB54262C5958BCF9B9A7941D /* MessengerSession.swift */; };
 		34FB7BE675A22662F4F3120B5FC1ADA2 /* MessengerSessionContextTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A60B3D76CBBFC021BEAA28C3B3F793 /* MessengerSessionContextTransiting.swift */; };
-		38F4C45628F8706F3C257FDD64A5D663 /* Pods-Sample iOS App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9049E84B2E47872A9B861059371134BF /* Pods-Sample iOS App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38F4C45628F8706F3C257FDD64A5D663 /* Pods-Sample iOS App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B6FD2FCFF29D8A9FF31FFC5ED3892B1 /* Pods-Sample iOS App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D150138F06C457446B844A9BB016E0B /* SwiftyMessenger-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7300F6166C7AD6DACF8C5ECC9D092735 /* SwiftyMessenger-iOS-dummy.m */; };
 		40231AC092C4C4A23BADF61802069F1E /* MessengerSessionFileTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D9E501A8BB92DD3C5EFC51CF1308A9 /* MessengerSessionFileTransiting.swift */; };
 		486E4125B024B0CE833BBF47952B261E /* SwiftyMessenger-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41A0FA813A9BE34C4863B81BCDDD7B97 /* SwiftyMessenger-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		594EA6D427D9E357EF2C9C66897A68C6 /* Pods-Sample WatchOS App Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE80583650D10D603BE83314076A2004 /* Pods-Sample WatchOS App Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594EA6D427D9E357EF2C9C66897A68C6 /* Pods-Sample WatchOS App Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D80E73344808E6A9DFC29BB39A9C8D7 /* Pods-Sample WatchOS App Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B4EDEE2BED508E474D2C8833B4ECF92 /* MessengerFileTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C1450A1E1541632881EBD946DE8F80 /* MessengerFileTransiting.swift */; };
 		675431546B35506EB7184C562695E242 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4975B2083EBFB55CAF05CD02BA838CB /* Foundation.framework */; };
 		6845282C52F23A5C8D49ECFFE47BD6FF /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA4FC9F7A9D16BE49BC4A5BBC72B6BF /* Messenger.swift */; };
@@ -24,14 +24,17 @@
 		835858AD683FC7383F60C7746BED5107 /* String+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E4BA6BFA088F7BFC3BAED6573090FA /* String+Path.swift */; };
 		87D5E9E0C0F8B360B5294F5F791053B0 /* MessengerSessionContextTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A60B3D76CBBFC021BEAA28C3B3F793 /* MessengerSessionContextTransiting.swift */; };
 		887B51DEBEF9CE7E2EC6311DEF229FCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4975B2083EBFB55CAF05CD02BA838CB /* Foundation.framework */; };
-		AD3FAB84C8A18AEA7DE983FF474964C4 /* Pods-Sample WatchOS App Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D99CE3604B88901F2300CC53BE7CD3 /* Pods-Sample WatchOS App Extension-dummy.m */; };
+		9796A26B603E0D6963D126E27C390B17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77640DDAFE615BB37FC5A8BC18E875D /* Foundation.framework */; };
+		AD3FAB84C8A18AEA7DE983FF474964C4 /* Pods-Sample WatchOS App Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D368F87E4375AEEB6448431259B8C498 /* Pods-Sample WatchOS App Extension-dummy.m */; };
 		B1C3006F11EAF74BB7C6AD8DE1B1585C /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA4FC9F7A9D16BE49BC4A5BBC72B6BF /* Messenger.swift */; };
 		BE980281F142D6F2C5E39909E31AC6AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77640DDAFE615BB37FC5A8BC18E875D /* Foundation.framework */; };
 		BF55AAD0CAFC84977F33A8BD35765C47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77640DDAFE615BB37FC5A8BC18E875D /* Foundation.framework */; };
 		C68AE3D1F0BF46888C72F7B2C1512B78 /* MessengerSessionMessageTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707E2DD92261F9BE954852275234255C /* MessengerSessionMessageTransiting.swift */; };
-		D2F5B5FDC944BF12E4EFDF7D42B62D3F /* Pods-Sample iOS App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07132A46AE8E015FF81A7301FE3397 /* Pods-Sample iOS App-dummy.m */; };
+		D2F5B5FDC944BF12E4EFDF7D42B62D3F /* Pods-Sample iOS App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D186489A295D133D34DF7FCAD33353 /* Pods-Sample iOS App-dummy.m */; };
+		D4866439365AF1CE6EEED92A80139675 /* Pods-Sample Today Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A7C109F4C8BA7A43F16A5B3DAA188D /* Pods-Sample Today Extension-dummy.m */; };
 		D5CEEFD3962C802E77A5AEC46E4C8FAB /* SwiftyMessenger-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F112B45955D2B698F57D1C1EA5AEABDC /* SwiftyMessenger-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8550FA052D5243EC9E7B66BAC9D3A09 /* MessengerFileTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C1450A1E1541632881EBD946DE8F80 /* MessengerFileTransiting.swift */; };
+		DD2601F2B72BBDAB935057B41250652F /* Pods-Sample Today Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9618F7F4CCC4BB69B9F652ED1FA3FC9 /* Pods-Sample Today Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E909B12EF96517C33421400A0E3A40A6 /* MessengerSessionMessageTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707E2DD92261F9BE954852275234255C /* MessengerSessionMessageTransiting.swift */; };
 		ED75701AA096FB029E5F06693D57489F /* MessengerSessionFileTransiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D9E501A8BB92DD3C5EFC51CF1308A9 /* MessengerSessionFileTransiting.swift */; };
 		F6D34F659DE49ABEA0D6A1BD8092107C /* MessengerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC78FADB54262C5958BCF9B9A7941D /* MessengerSession.swift */; };
@@ -52,59 +55,76 @@
 			remoteGlobalIDString = 04097A3DA1FFFAB91694BCB1A54F25BE;
 			remoteInfo = "SwiftyMessenger-iOS";
 		};
+		BDEC8EB73EFD1FD8F1E0F7F89422C55D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04097A3DA1FFFAB91694BCB1A54F25BE;
+			remoteInfo = "SwiftyMessenger-iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A2882C7F1F8B4E365315B5D2F0EE34F /* Pods-Sample WatchOS App Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sample WatchOS App Extension-acknowledgements.plist"; sourceTree = "<group>"; };
-		13F84C4D637F325DC7AA36317EB26E22 /* Pods-Sample iOS App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample iOS App.debug.xcconfig"; sourceTree = "<group>"; };
+		05BDF495AD08F703C789D5EDEC242513 /* Pods-Sample WatchOS App Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sample WatchOS App Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0813F0A1E316221A0ED3B529FE908DA6 /* Pods-Sample Today Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample Today Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		1980A6EFCA747E6239ADD683361C7D63 /* Pods-Sample WatchOS App Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample WatchOS App Extension.release.xcconfig"; sourceTree = "<group>"; };
+		1A7A2FB1B62EB8F0DC4588CED7DDBAF2 /* SwiftyMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D80E73344808E6A9DFC29BB39A9C8D7 /* Pods-Sample WatchOS App Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sample WatchOS App Extension-umbrella.h"; sourceTree = "<group>"; };
+		1DFEA4157A1E191F519758D7AF5C5508 /* Pods-Sample iOS App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sample iOS App-acknowledgements.plist"; sourceTree = "<group>"; };
 		1EF580BAE10595326535F10230FF5F4C /* SwiftyMessenger-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "SwiftyMessenger-watchOS.modulemap"; path = "../SwiftyMessenger-watchOS/SwiftyMessenger-watchOS.modulemap"; sourceTree = "<group>"; };
+		23EAA894DAA7598B7F0AD251FC5AD2D8 /* Pods-Sample WatchOS App Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample WatchOS App Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		29C1450A1E1541632881EBD946DE8F80 /* MessengerFileTransiting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessengerFileTransiting.swift; path = Source/MessengerFileTransiting.swift; sourceTree = "<group>"; };
+		2CA0DC10F22E425CF78460DEFE441190 /* Pods-Sample Today Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample Today Extension-resources.sh"; sourceTree = "<group>"; };
 		2FAE7C2F994D8AA2F78FD478D8C774C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37D99CE3604B88901F2300CC53BE7CD3 /* Pods-Sample WatchOS App Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sample WatchOS App Extension-dummy.m"; sourceTree = "<group>"; };
+		3888049D039CC16D9D6BD7E07E9BD1C0 /* Pods_Sample_iOS_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_iOS_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A0FA813A9BE34C4863B81BCDDD7B97 /* SwiftyMessenger-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyMessenger-iOS-umbrella.h"; sourceTree = "<group>"; };
-		452BC08C397C2BBF0E18D61B6C0FB750 /* SwiftyMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44A7C109F4C8BA7A43F16A5B3DAA188D /* Pods-Sample Today Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sample Today Extension-dummy.m"; sourceTree = "<group>"; };
 		4BA4FC9F7A9D16BE49BC4A5BBC72B6BF /* Messenger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Messenger.swift; path = Source/Messenger.swift; sourceTree = "<group>"; };
-		5163C937D3B62D0961DB6DC608A1A361 /* SwiftyMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		51D275E5CBEC772956A6102704B47206 /* Pods-Sample iOS App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sample iOS App.modulemap"; sourceTree = "<group>"; };
+		4D86DD8F42601A2F9F317183A774F672 /* Pods-Sample WatchOS App Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sample WatchOS App Extension.modulemap"; sourceTree = "<group>"; };
+		5084AE49A9429FDFA6350940E6330BA8 /* Pods-Sample Today Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sample Today Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5D3EEA66AABD3263C53232D4BD37FA87 /* SwiftyMessenger-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SwiftyMessenger-watchOS-dummy.m"; path = "../SwiftyMessenger-watchOS/SwiftyMessenger-watchOS-dummy.m"; sourceTree = "<group>"; };
 		63B37696A86EE9204764B9DEC03F0433 /* MessengerCoordinatedFileTransiting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessengerCoordinatedFileTransiting.swift; path = Source/MessengerCoordinatedFileTransiting.swift; sourceTree = "<group>"; };
 		645894F53DA6143D18854010EBC470CD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6568295FD91702B0F7B90ECE7CF49616 /* Pods_Sample_WatchOS_App_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_WatchOS_App_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A60B3D76CBBFC021BEAA28C3B3F793 /* MessengerSessionContextTransiting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessengerSessionContextTransiting.swift; path = Source/MessengerSessionContextTransiting.swift; sourceTree = "<group>"; };
+		6644BCABB0FE500380D7663A8C494D7A /* Pods-Sample iOS App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample iOS App.release.xcconfig"; sourceTree = "<group>"; };
+		6731D4EAE40BCA1235AE3C6FD7C6C29F /* Pods_Sample_Today_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_Today_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A13840024C91796C9EE6794B7C1B279 /* Pods-Sample WatchOS App Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sample WatchOS App Extension-acknowledgements.plist"; sourceTree = "<group>"; };
 		6AED873B6416EEBF731AD9ECC91B0E24 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		707E2DD92261F9BE954852275234255C /* MessengerSessionMessageTransiting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessengerSessionMessageTransiting.swift; path = Source/MessengerSessionMessageTransiting.swift; sourceTree = "<group>"; };
 		7300F6166C7AD6DACF8C5ECC9D092735 /* SwiftyMessenger-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyMessenger-iOS-dummy.m"; sourceTree = "<group>"; };
-		74ED2639C06F40110C6A137F423034F8 /* Pods-Sample iOS App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sample iOS App-acknowledgements.markdown"; sourceTree = "<group>"; };
-		769A10C24025416C2542AC17E44190FB /* Pods-Sample iOS App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample iOS App-resources.sh"; sourceTree = "<group>"; };
+		76156718C362901A3F4F35CD0906DE1F /* Pods-Sample Today Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample Today Extension.release.xcconfig"; sourceTree = "<group>"; };
 		76E55671289E01FD14E7B3883EC84E8B /* SwiftyMessenger-watchOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "SwiftyMessenger-watchOS.xcconfig"; path = "../SwiftyMessenger-watchOS/SwiftyMessenger-watchOS.xcconfig"; sourceTree = "<group>"; };
-		7E522FEF34945C5DC7C4623D8EC0DAEB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		814AEB55D169BF2560C27013EA11702E /* Pods-Sample iOS App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sample iOS App-acknowledgements.plist"; sourceTree = "<group>"; };
+		80D186489A295D133D34DF7FCAD33353 /* Pods-Sample iOS App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sample iOS App-dummy.m"; sourceTree = "<group>"; };
 		83D9E501A8BB92DD3C5EFC51CF1308A9 /* MessengerSessionFileTransiting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessengerSessionFileTransiting.swift; path = Source/MessengerSessionFileTransiting.swift; sourceTree = "<group>"; };
-		87811DF986A121AD3EE0C0AEB3C562AB /* Pods-Sample WatchOS App Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sample WatchOS App Extension.modulemap"; sourceTree = "<group>"; };
-		8972D468EDD15685315B7E06697D95BD /* Pods-Sample iOS App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample iOS App-frameworks.sh"; sourceTree = "<group>"; };
-		8F9E1F3E907F32ACE01F5D9CAF5B78E3 /* Pods-Sample iOS App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample iOS App.release.xcconfig"; sourceTree = "<group>"; };
-		9049E84B2E47872A9B861059371134BF /* Pods-Sample iOS App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sample iOS App-umbrella.h"; sourceTree = "<group>"; };
+		8B6FD2FCFF29D8A9FF31FFC5ED3892B1 /* Pods-Sample iOS App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sample iOS App-umbrella.h"; sourceTree = "<group>"; };
+		92A70B18393F4B8849930BF53BF15738 /* SwiftyMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92EFC592AC501434DA4689F03715C708 /* Pods-Sample iOS App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample iOS App.debug.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9796DA4895B984E1F31EC86783CA00FD /* SwiftyMessenger-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SwiftyMessenger-iOS.xcconfig"; sourceTree = "<group>"; };
-		A948999BDF3A9CC0650B4E8F62AA3BCA /* Pods-Sample WatchOS App Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sample WatchOS App Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B2F24FC991AC248C3832D601A6732FCD /* Pods_Sample_iOS_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_iOS_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3D71C1B6C5DD497B517153886826580 /* Pods-Sample WatchOS App Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample WatchOS App Extension-resources.sh"; sourceTree = "<group>"; };
-		BE80583650D10D603BE83314076A2004 /* Pods-Sample WatchOS App Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sample WatchOS App Extension-umbrella.h"; sourceTree = "<group>"; };
-		BFF978797132A9F0E76301C857236407 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98E2155A34D2F3400FC7DA7E9741CBD8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B7F87440CD74D0377254A6A45F1CE09 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA853FF4A52C2D4C86334A26F84FDF30 /* Pods-Sample WatchOS App Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample WatchOS App Extension-frameworks.sh"; sourceTree = "<group>"; };
+		B07BD8B258A88A628F35DD1444E2B632 /* Pods-Sample iOS App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample iOS App-frameworks.sh"; sourceTree = "<group>"; };
+		B5994A63A25DE5251A794B14F85313E4 /* Pods-Sample WatchOS App Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample WatchOS App Extension-resources.sh"; sourceTree = "<group>"; };
+		C3B19F2A2BB6561B049E7E5BF07DA775 /* Pods-Sample iOS App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sample iOS App-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C4975B2083EBFB55CAF05CD02BA838CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		C7188188AB42B6AF08C7D9477398E2F5 /* SwiftyMessenger.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SwiftyMessenger.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CB81BDCC0CB9B875F45493DF6766DB33 /* Pods-Sample Today Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sample Today Extension.modulemap"; sourceTree = "<group>"; };
 		CCAC78FADB54262C5958BCF9B9A7941D /* MessengerSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessengerSession.swift; path = Source/MessengerSession.swift; sourceTree = "<group>"; };
-		CD705AB7A132924358294E755B48BDB8 /* Pods_Sample_WatchOS_App_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_WatchOS_App_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD76AF6D4B4B6001A1DAFA4B16DE788A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0AFFCC2C0FCBCE94433DE6361E66665 /* SwiftyMessenger-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SwiftyMessenger-watchOS-prefix.pch"; path = "../SwiftyMessenger-watchOS/SwiftyMessenger-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		D0B45839EC4167D3A7FCD75F40B119A4 /* Pods-Sample Today Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sample Today Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		D368F87E4375AEEB6448431259B8C498 /* Pods-Sample WatchOS App Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sample WatchOS App Extension-dummy.m"; sourceTree = "<group>"; };
 		D8E4BA6BFA088F7BFC3BAED6573090FA /* String+Path.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Path.swift"; path = "Source/String+Path.swift"; sourceTree = "<group>"; };
-		DA07132A46AE8E015FF81A7301FE3397 /* Pods-Sample iOS App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sample iOS App-dummy.m"; sourceTree = "<group>"; };
 		DA0DA646D9915638F673855D947AF967 /* SwiftyMessenger-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyMessenger-iOS-prefix.pch"; sourceTree = "<group>"; };
-		DAB89FC56B57B1C9C7E6196CAFFFBA6B /* Pods-Sample WatchOS App Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample WatchOS App Extension-frameworks.sh"; sourceTree = "<group>"; };
-		E5BF2C98C1AC88E4CDD382AE08C948BA /* Pods-Sample WatchOS App Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample WatchOS App Extension.release.xcconfig"; sourceTree = "<group>"; };
 		E77640DDAFE615BB37FC5A8BC18E875D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E9618F7F4CCC4BB69B9F652ED1FA3FC9 /* Pods-Sample Today Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sample Today Extension-umbrella.h"; sourceTree = "<group>"; };
+		EB8C77466532FEA03FE1D93068ACE884 /* Pods-Sample iOS App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample iOS App-resources.sh"; sourceTree = "<group>"; };
 		F112B45955D2B698F57D1C1EA5AEABDC /* SwiftyMessenger-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SwiftyMessenger-watchOS-umbrella.h"; path = "../SwiftyMessenger-watchOS/SwiftyMessenger-watchOS-umbrella.h"; sourceTree = "<group>"; };
-		F723580D74A7DA8288FBCA618B4A2779 /* Pods-Sample WatchOS App Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample WatchOS App Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		F7C424456940A904FF53A24E36B63A8E /* SwiftyMessenger-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "SwiftyMessenger-iOS.modulemap"; sourceTree = "<group>"; };
 		FA1FEE8831570255F5F416D6F653714C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../SwiftyMessenger-watchOS/Info.plist"; sourceTree = "<group>"; };
+		FF56F1F51723D748A2F60741146735AE /* Pods-Sample iOS App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sample iOS App.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +149,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE980281F142D6F2C5E39909E31AC6AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6407AF33760F78022D04073F4481A1D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9796A26B603E0D6963D126E27C390B17 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +187,18 @@
 			name = watchOS;
 			sourceTree = "<group>";
 		};
+		2412AB5A218E674E61C6D6C155D385B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3888049D039CC16D9D6BD7E07E9BD1C0 /* Pods_Sample_iOS_App.framework */,
+				6731D4EAE40BCA1235AE3C6FD7C6C29F /* Pods_Sample_Today_Extension.framework */,
+				6568295FD91702B0F7B90ECE7CF49616 /* Pods_Sample_WatchOS_App_Extension.framework */,
+				92A70B18393F4B8849930BF53BF15738 /* SwiftyMessenger.framework */,
+				1A7A2FB1B62EB8F0DC4588CED7DDBAF2 /* SwiftyMessenger.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2A842B47D02C5AC99534F7D73972E69E /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,33 +209,21 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		39AD950038F218DB2B0A54F6D2EBF1D4 /* Products */ = {
+		5DD180070B81E18ABC9A14F90D851719 /* Pods-Sample Today Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B2F24FC991AC248C3832D601A6732FCD /* Pods_Sample_iOS_App.framework */,
-				CD705AB7A132924358294E755B48BDB8 /* Pods_Sample_WatchOS_App_Extension.framework */,
-				5163C937D3B62D0961DB6DC608A1A361 /* SwiftyMessenger.framework */,
-				452BC08C397C2BBF0E18D61B6C0FB750 /* SwiftyMessenger.framework */,
+				98E2155A34D2F3400FC7DA7E9741CBD8 /* Info.plist */,
+				CB81BDCC0CB9B875F45493DF6766DB33 /* Pods-Sample Today Extension.modulemap */,
+				5084AE49A9429FDFA6350940E6330BA8 /* Pods-Sample Today Extension-acknowledgements.markdown */,
+				D0B45839EC4167D3A7FCD75F40B119A4 /* Pods-Sample Today Extension-acknowledgements.plist */,
+				44A7C109F4C8BA7A43F16A5B3DAA188D /* Pods-Sample Today Extension-dummy.m */,
+				2CA0DC10F22E425CF78460DEFE441190 /* Pods-Sample Today Extension-resources.sh */,
+				E9618F7F4CCC4BB69B9F652ED1FA3FC9 /* Pods-Sample Today Extension-umbrella.h */,
+				0813F0A1E316221A0ED3B529FE908DA6 /* Pods-Sample Today Extension.debug.xcconfig */,
+				76156718C362901A3F4F35CD0906DE1F /* Pods-Sample Today Extension.release.xcconfig */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		598CC3630179E39A348EB64A7D9DF4D2 /* Pods-Sample iOS App */ = {
-			isa = PBXGroup;
-			children = (
-				7E522FEF34945C5DC7C4623D8EC0DAEB /* Info.plist */,
-				51D275E5CBEC772956A6102704B47206 /* Pods-Sample iOS App.modulemap */,
-				74ED2639C06F40110C6A137F423034F8 /* Pods-Sample iOS App-acknowledgements.markdown */,
-				814AEB55D169BF2560C27013EA11702E /* Pods-Sample iOS App-acknowledgements.plist */,
-				DA07132A46AE8E015FF81A7301FE3397 /* Pods-Sample iOS App-dummy.m */,
-				8972D468EDD15685315B7E06697D95BD /* Pods-Sample iOS App-frameworks.sh */,
-				769A10C24025416C2542AC17E44190FB /* Pods-Sample iOS App-resources.sh */,
-				9049E84B2E47872A9B861059371134BF /* Pods-Sample iOS App-umbrella.h */,
-				13F84C4D637F325DC7AA36317EB26E22 /* Pods-Sample iOS App.debug.xcconfig */,
-				8F9E1F3E907F32ACE01F5D9CAF5B78E3 /* Pods-Sample iOS App.release.xcconfig */,
-			);
-			name = "Pods-Sample iOS App";
-			path = "Target Support Files/Pods-Sample iOS App";
+			name = "Pods-Sample Today Extension";
+			path = "Target Support Files/Pods-Sample Today Extension";
 			sourceTree = "<group>";
 		};
 		6A27DBEBEA5E34BF3E113A386555B628 /* SwiftyMessenger */ = {
@@ -222,8 +250,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				15BABE069DBF3D95645D081F7E79C833 /* Development Pods */,
 				8F91EE078EA3977443D1BDC2601132EF /* Frameworks */,
-				39AD950038F218DB2B0A54F6D2EBF1D4 /* Products */,
-				ACB4EACB2C67FF823354C997EC21363F /* Targets Support Files */,
+				2412AB5A218E674E61C6D6C155D385B6 /* Products */,
+				977CF2283421172F36A49CA0DB106AD6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -256,31 +284,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		ACB4EACB2C67FF823354C997EC21363F /* Targets Support Files */ = {
+		977CF2283421172F36A49CA0DB106AD6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				598CC3630179E39A348EB64A7D9DF4D2 /* Pods-Sample iOS App */,
-				B87E19843EAA71B17389F90CB4DFE9E8 /* Pods-Sample WatchOS App Extension */,
+				A54C86F1576C764794E1FE040FCBBCE6 /* Pods-Sample iOS App */,
+				5DD180070B81E18ABC9A14F90D851719 /* Pods-Sample Today Extension */,
+				FADC0ACCCA8A5DB062C9C81632631A5C /* Pods-Sample WatchOS App Extension */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B87E19843EAA71B17389F90CB4DFE9E8 /* Pods-Sample WatchOS App Extension */ = {
+		A54C86F1576C764794E1FE040FCBBCE6 /* Pods-Sample iOS App */ = {
 			isa = PBXGroup;
 			children = (
-				BFF978797132A9F0E76301C857236407 /* Info.plist */,
-				87811DF986A121AD3EE0C0AEB3C562AB /* Pods-Sample WatchOS App Extension.modulemap */,
-				A948999BDF3A9CC0650B4E8F62AA3BCA /* Pods-Sample WatchOS App Extension-acknowledgements.markdown */,
-				0A2882C7F1F8B4E365315B5D2F0EE34F /* Pods-Sample WatchOS App Extension-acknowledgements.plist */,
-				37D99CE3604B88901F2300CC53BE7CD3 /* Pods-Sample WatchOS App Extension-dummy.m */,
-				DAB89FC56B57B1C9C7E6196CAFFFBA6B /* Pods-Sample WatchOS App Extension-frameworks.sh */,
-				B3D71C1B6C5DD497B517153886826580 /* Pods-Sample WatchOS App Extension-resources.sh */,
-				BE80583650D10D603BE83314076A2004 /* Pods-Sample WatchOS App Extension-umbrella.h */,
-				F723580D74A7DA8288FBCA618B4A2779 /* Pods-Sample WatchOS App Extension.debug.xcconfig */,
-				E5BF2C98C1AC88E4CDD382AE08C948BA /* Pods-Sample WatchOS App Extension.release.xcconfig */,
+				9B7F87440CD74D0377254A6A45F1CE09 /* Info.plist */,
+				FF56F1F51723D748A2F60741146735AE /* Pods-Sample iOS App.modulemap */,
+				C3B19F2A2BB6561B049E7E5BF07DA775 /* Pods-Sample iOS App-acknowledgements.markdown */,
+				1DFEA4157A1E191F519758D7AF5C5508 /* Pods-Sample iOS App-acknowledgements.plist */,
+				80D186489A295D133D34DF7FCAD33353 /* Pods-Sample iOS App-dummy.m */,
+				B07BD8B258A88A628F35DD1444E2B632 /* Pods-Sample iOS App-frameworks.sh */,
+				EB8C77466532FEA03FE1D93068ACE884 /* Pods-Sample iOS App-resources.sh */,
+				8B6FD2FCFF29D8A9FF31FFC5ED3892B1 /* Pods-Sample iOS App-umbrella.h */,
+				92EFC592AC501434DA4689F03715C708 /* Pods-Sample iOS App.debug.xcconfig */,
+				6644BCABB0FE500380D7663A8C494D7A /* Pods-Sample iOS App.release.xcconfig */,
 			);
-			name = "Pods-Sample WatchOS App Extension";
-			path = "Target Support Files/Pods-Sample WatchOS App Extension";
+			name = "Pods-Sample iOS App";
+			path = "Target Support Files/Pods-Sample iOS App";
 			sourceTree = "<group>";
 		};
 		F375DB63C3BCC11AF9808234753C618A /* iOS */ = {
@@ -291,9 +320,35 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		FADC0ACCCA8A5DB062C9C81632631A5C /* Pods-Sample WatchOS App Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CD76AF6D4B4B6001A1DAFA4B16DE788A /* Info.plist */,
+				4D86DD8F42601A2F9F317183A774F672 /* Pods-Sample WatchOS App Extension.modulemap */,
+				05BDF495AD08F703C789D5EDEC242513 /* Pods-Sample WatchOS App Extension-acknowledgements.markdown */,
+				6A13840024C91796C9EE6794B7C1B279 /* Pods-Sample WatchOS App Extension-acknowledgements.plist */,
+				D368F87E4375AEEB6448431259B8C498 /* Pods-Sample WatchOS App Extension-dummy.m */,
+				AA853FF4A52C2D4C86334A26F84FDF30 /* Pods-Sample WatchOS App Extension-frameworks.sh */,
+				B5994A63A25DE5251A794B14F85313E4 /* Pods-Sample WatchOS App Extension-resources.sh */,
+				1D80E73344808E6A9DFC29BB39A9C8D7 /* Pods-Sample WatchOS App Extension-umbrella.h */,
+				23EAA894DAA7598B7F0AD251FC5AD2D8 /* Pods-Sample WatchOS App Extension.debug.xcconfig */,
+				1980A6EFCA747E6239ADD683361C7D63 /* Pods-Sample WatchOS App Extension.release.xcconfig */,
+			);
+			name = "Pods-Sample WatchOS App Extension";
+			path = "Target Support Files/Pods-Sample WatchOS App Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1D4430A00A8651BBB936291F75F24461 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2601F2B72BBDAB935057B41250652F /* Pods-Sample Today Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52F86F64D5CD542DECFB14FC205DA7FC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -343,7 +398,7 @@
 			);
 			name = "SwiftyMessenger-iOS";
 			productName = "SwiftyMessenger-iOS";
-			productReference = 5163C937D3B62D0961DB6DC608A1A361 /* SwiftyMessenger.framework */;
+			productReference = 92A70B18393F4B8849930BF53BF15738 /* SwiftyMessenger.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		31F9816622311DABCC135F20341329BF /* SwiftyMessenger-watchOS */ = {
@@ -360,7 +415,25 @@
 			);
 			name = "SwiftyMessenger-watchOS";
 			productName = "SwiftyMessenger-watchOS";
-			productReference = 452BC08C397C2BBF0E18D61B6C0FB750 /* SwiftyMessenger.framework */;
+			productReference = 1A7A2FB1B62EB8F0DC4588CED7DDBAF2 /* SwiftyMessenger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6C67FD8D110028B651867745B3C404D4 /* Pods-Sample Today Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 558738F2492DE1E2007492CF639752AB /* Build configuration list for PBXNativeTarget "Pods-Sample Today Extension" */;
+			buildPhases = (
+				D8C9E8471D294EA00224391F69021487 /* Sources */,
+				6407AF33760F78022D04073F4481A1D5 /* Frameworks */,
+				1D4430A00A8651BBB936291F75F24461 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				779E7FEBBFBCB93B286B6EF12677A075 /* PBXTargetDependency */,
+			);
+			name = "Pods-Sample Today Extension";
+			productName = "Pods-Sample Today Extension";
+			productReference = 6731D4EAE40BCA1235AE3C6FD7C6C29F /* Pods_Sample_Today_Extension.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		79A5E7296AC35CDCC01C6BF5ABFBE1C7 /* Pods-Sample iOS App */ = {
@@ -378,7 +451,7 @@
 			);
 			name = "Pods-Sample iOS App";
 			productName = "Pods-Sample iOS App";
-			productReference = B2F24FC991AC248C3832D601A6732FCD /* Pods_Sample_iOS_App.framework */;
+			productReference = 3888049D039CC16D9D6BD7E07E9BD1C0 /* Pods_Sample_iOS_App.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CB63A5D175087B3EB3EFAF8B97F95453 /* Pods-Sample WatchOS App Extension */ = {
@@ -396,7 +469,7 @@
 			);
 			name = "Pods-Sample WatchOS App Extension";
 			productName = "Pods-Sample WatchOS App Extension";
-			productReference = CD705AB7A132924358294E755B48BDB8 /* Pods_Sample_WatchOS_App_Extension.framework */;
+			productReference = 6568295FD91702B0F7B90ECE7CF49616 /* Pods_Sample_WatchOS_App_Extension.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -416,11 +489,12 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 39AD950038F218DB2B0A54F6D2EBF1D4 /* Products */;
+			productRefGroup = 2412AB5A218E674E61C6D6C155D385B6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				79A5E7296AC35CDCC01C6BF5ABFBE1C7 /* Pods-Sample iOS App */,
+				6C67FD8D110028B651867745B3C404D4 /* Pods-Sample Today Extension */,
 				CB63A5D175087B3EB3EFAF8B97F95453 /* Pods-Sample WatchOS App Extension */,
 				04097A3DA1FFFAB91694BCB1A54F25BE /* SwiftyMessenger-iOS */,
 				31F9816622311DABCC135F20341329BF /* SwiftyMessenger-watchOS */,
@@ -450,6 +524,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD3FAB84C8A18AEA7DE983FF474964C4 /* Pods-Sample WatchOS App Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C9E8471D294EA00224391F69021487 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4866439365AF1CE6EEED92A80139675 /* Pods-Sample Today Extension-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +568,12 @@
 			target = 04097A3DA1FFFAB91694BCB1A54F25BE /* SwiftyMessenger-iOS */;
 			targetProxy = ADE411663327F78F6FE53F003FADABD2 /* PBXContainerItemProxy */;
 		};
+		779E7FEBBFBCB93B286B6EF12677A075 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyMessenger-iOS";
+			target = 04097A3DA1FFFAB91694BCB1A54F25BE /* SwiftyMessenger-iOS */;
+			targetProxy = BDEC8EB73EFD1FD8F1E0F7F89422C55D /* PBXContainerItemProxy */;
+		};
 		FE75B3344E2E456D4C81D552EBBE4035 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SwiftyMessenger-watchOS";
@@ -495,10 +583,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		16137293AA9AA0AA25791CC0C384CC46 /* Release */ = {
+		1102EB82031FADC1144F5A75EEE9229B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9796DA4895B984E1F31EC86783CA00FD /* SwiftyMessenger-iOS.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -594,7 +683,7 @@
 		};
 		5ACF6D9B52CB0158D6D34CD45E09309C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13F84C4D637F325DC7AA36317EB26E22 /* Pods-Sample iOS App.debug.xcconfig */;
+			baseConfigurationReference = 92EFC592AC501434DA4689F03715C708 /* Pods-Sample iOS App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -627,41 +716,9 @@
 			};
 			name = Debug;
 		};
-		844CB895FB01B0E6E2E695622366AB4F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9796DA4895B984E1F31EC86783CA00FD /* SwiftyMessenger-iOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyMessenger-iOS/SwiftyMessenger-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyMessenger-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyMessenger-iOS/SwiftyMessenger-iOS.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyMessenger;
-				PRODUCT_NAME = SwiftyMessenger;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		84BDCDA335468962E1D73190EC79D322 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F723580D74A7DA8288FBCA618B4A2779 /* Pods-Sample WatchOS App Extension.debug.xcconfig */;
+			baseConfigurationReference = 23EAA894DAA7598B7F0AD251FC5AD2D8 /* Pods-Sample WatchOS App Extension.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -692,6 +749,42 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		8A399092852DA97D70D198D6190B7232 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0813F0A1E316221A0ED3B529FE908DA6 /* Pods-Sample Today Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sample Today Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sample Today Extension/Pods-Sample Today Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -728,6 +821,39 @@
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
+		};
+		A6D7417A4D64466CE433D799284BF8DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9796DA4895B984E1F31EC86783CA00FD /* SwiftyMessenger-iOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyMessenger-iOS/SwiftyMessenger-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyMessenger-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyMessenger-iOS/SwiftyMessenger-iOS.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyMessenger;
+				PRODUCT_NAME = SwiftyMessenger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		BB11E8A45C212B3A6D80B704119AB6FA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -822,9 +948,45 @@
 			};
 			name = Release;
 		};
+		DD4D718A0462962C7E7975C12D15D81C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76156718C362901A3F4F35CD0906DE1F /* Pods-Sample Today Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sample Today Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sample Today Extension/Pods-Sample Today Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		DDA4A09FE59C899E0213343EE6E65F8A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5BF2C98C1AC88E4CDD382AE08C948BA /* Pods-Sample WatchOS App Extension.release.xcconfig */;
+			baseConfigurationReference = 1980A6EFCA747E6239ADD683361C7D63 /* Pods-Sample WatchOS App Extension.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -860,7 +1022,7 @@
 		};
 		EF65D5687829A63226ED97961A279C26 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F9E1F3E907F32ACE01F5D9CAF5B78E3 /* Pods-Sample iOS App.release.xcconfig */;
+			baseConfigurationReference = 6644BCABB0FE500380D7663A8C494D7A /* Pods-Sample iOS App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -917,8 +1079,17 @@
 		45136AB1A299235B57B0F2328132714F /* Build configuration list for PBXNativeTarget "SwiftyMessenger-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				844CB895FB01B0E6E2E695622366AB4F /* Debug */,
-				16137293AA9AA0AA25791CC0C384CC46 /* Release */,
+				A6D7417A4D64466CE433D799284BF8DC /* Debug */,
+				1102EB82031FADC1144F5A75EEE9229B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		558738F2492DE1E2007492CF639752AB /* Build configuration list for PBXNativeTarget "Pods-Sample Today Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A399092852DA97D70D198D6190B7232 /* Debug */,
+				DD4D718A0462962C7E7975C12D15D81C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
