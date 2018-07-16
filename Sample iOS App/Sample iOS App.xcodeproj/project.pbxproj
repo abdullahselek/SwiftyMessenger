@@ -106,6 +106,7 @@
 		A422D50720FD26230075319F /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		A422D50A20FD26230075319F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		A422D50C20FD26230075319F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A422D51420FD27140075319F /* Sample Today Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sample Today Extension.entitlements"; sourceTree = "<group>"; };
 		A48BFE2420C3FD9500557889 /* Sample iOS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample iOS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48BFE2720C3FD9500557889 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A48BFE2920C3FD9500557889 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +188,7 @@
 		A422D50620FD26230075319F /* Sample Today Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A422D51420FD27140075319F /* Sample Today Extension.entitlements */,
 				A422D50720FD26230075319F /* TodayViewController.swift */,
 				A422D50920FD26230075319F /* MainInterface.storyboard */,
 				A422D50C20FD26230075319F /* Info.plist */,
@@ -386,6 +388,11 @@
 				TargetAttributes = {
 					A422D50220FD26230075319F = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A48BFE2320C3FD9500557889 = {
 						CreatedOnToolsVersion = 9.4;
@@ -653,6 +660,7 @@
 		A422D51020FD26230075319F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Sample Today Extension/Sample Today Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5EHDAGHZ78;
 				INFOPLIST_FILE = "Sample Today Extension/Info.plist";
@@ -673,6 +681,7 @@
 		A422D51120FD26230075319F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Sample Today Extension/Sample Today Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5EHDAGHZ78;
 				INFOPLIST_FILE = "Sample Today Extension/Info.plist";
