@@ -8,26 +8,29 @@
 
 import UIKit
 import NotificationCenter
+import SwiftyMessenger
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
+
+    private static let groupIdentifier = "group.com.abdullahselek.swiftymessenger"
+    private static let directory = "messenger"
+    private var messenger: Messenger!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view from its nib.
+        messenger = Messenger(withApplicationGroupIdentifier: TodayViewController.groupIdentifier,
+                              directory: TodayViewController.directory)
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    @IBAction func oneTapped(_ sender: Any) {
+        messenger.passMessage(message: ["buttonTitle": "Today-One"], identifier: "button")
     }
-    
+
+    @IBAction func twoTapped(_ sender: Any) {
+        messenger.passMessage(message: ["buttonTitle": "Today-Two"], identifier: "button")
+    }
+
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        // Perform any setup necessary in order to update the view.
-        
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-        
         completionHandler(NCUpdateResult.newData)
     }
     
