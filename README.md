@@ -4,6 +4,25 @@
 ![Platform](https://img.shields.io/cocoapods/p/SwiftyMessenger.svg?style=flat)
 ![License](https://img.shields.io/dub/l/vibe-d.svg)
 
+```
+    _________ ___          ___  _   _____  _________ ___    ___
+   /        / \  \        /  / |_| ( ___ \ \__   __/ \  \  /  /
+  /   _____/   \  \  /\  /  /  | | | (  \/    ) (     \  \/  /
+  \_____  \     \  \/  \/  /   | | | (_       | |      \    /
+  /        \     \  ____  /    | | |  _)      | |       )  (
+ /_______ /       \/    \/     |_| | (        | |       |  |
+        \/                         | )        )_(       |__|
+                                   |/
+      _____        ______    ________  ________  ______   __      __     _____      ______  _________
+     /     \      (  ____\  /       / /       / (  ____\ |  \    |  |   /     \    (  ____\ \______  \
+    /       \     | (      /   ____/ /   ____/  | (      |  |\   |  |  /   ____\   | (       |        \
+   /  /\ /\  \    | (__    \_____ \  \_____ \   | (__    |  | \  |  | /   /__/  |  | (__     |    |____\
+  /  /  Y  \  \   |  __)   /       \ /       \  |  __)   |  |  \ |  | \______   /  |  __)    |     \\
+ /  /       \  \  | (     /_______/ /_______/   | (      |  |   \|  |  _____/  /   | (       |    | \\
+ |_/         |__| | (___/\      \/        \/    | (___/\ |__|    |__| |_______/    | (___/\  |____| |_|
+                  (______/                      (______/                           (______/
+```
+
 # SwiftyMessenger
 
 Swift toolkit for passing messages between iOS apps and extensions. It creates a bridge between container app and iOS extensions. SwiftyMessenger archives messages in files which are written to the application's shared App Group. SwiftyMessenger resembles interprocess communication between the app and the extension without a interprocess communication.
@@ -27,7 +46,7 @@ SwiftyMessenger can only work with App Group identifiers and Entitlements.
 ## CocoaPods
 
 CocoaPods is a dependency manager for Cocoa projects. You can install it with the following command:
-```	
+```
 $ gem install cocoapods
 ```
 
