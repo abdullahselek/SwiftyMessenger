@@ -28,7 +28,7 @@ open class MessengerSession: NSObject {
 
     private var session: WCSession!
     private var messenger: Messenger!
-    open static let shared = MessengerSession()
+    public static let shared = MessengerSession()
 
     private override init() {
         super.init()
