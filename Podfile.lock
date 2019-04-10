@@ -1,5 +1,5 @@
 PODS:
-  - SwiftyMessenger (0.1)
+  - SwiftyMessenger (0.2)
 
 DEPENDENCIES:
   - SwiftyMessenger (from `.`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
-  SwiftyMessenger: 0c1da19283ab3fa8a42da38d4c90f9739853b08c
+  SwiftyMessenger: aaa55ae13d046c54147f608ad1ea9935d20bcbf2
 
 PODFILE CHECKSUM: 19c19c1ca3db19be09e6b6cda87bd7bdd22e8db9
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.6.0.beta.2

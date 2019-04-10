@@ -506,7 +506,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-Sample iOS App/Pods-Sample iOS App-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Sample iOS App/Pods-Sample iOS App-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SwiftyMessenger-iOS/SwiftyMessenger.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -515,7 +515,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Sample iOS App/Pods-Sample iOS App-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sample iOS App/Pods-Sample iOS App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C3444E2A59E08E21AE6B74FE /* [CP] Embed Pods Frameworks */ = {
@@ -524,7 +524,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-Sample WatchOS App Extension/Pods-Sample WatchOS App Extension-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Sample WatchOS App Extension/Pods-Sample WatchOS App Extension-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SwiftyMessenger-watchOS/SwiftyMessenger.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -533,7 +533,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Sample WatchOS App Extension/Pods-Sample WatchOS App Extension-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sample WatchOS App Extension/Pods-Sample WatchOS App Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C603BB89898431C2ADE0A3C9 /* [CP] Check Pods Manifest.lock */ = {

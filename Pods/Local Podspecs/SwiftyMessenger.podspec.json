@@ -1,8 +1,8 @@
 {
   "name": "SwiftyMessenger",
-  "version": "0.1",
+  "version": "0.2",
   "summary": "Swift toolkit for passing messages between iOS apps and extensions.",
-  "homepage": "hhttps://github.com/abdullahselek/SwiftyMessenger",
+  "homepage": "https://github.com/abdullahselek/SwiftyMessenger",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/abdullahselek/SwiftyMessenger.git",
-    "tag": "0.1"
+    "tag": "0.2"
   },
   "platforms": {
     "ios": "9.0",
