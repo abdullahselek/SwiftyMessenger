@@ -6,7 +6,7 @@ workspace 'SwiftyMessenger.xcworkspace'
 project 'SwiftyMessenger.xcodeproj'
 
 target 'Sample iOS App' do
-	platform :ios, '9.0'
+	platform :ios, '10.0'
 	project 'Sample iOS App/Sample iOS App.xcodeproj'
 	use_frameworks!
     inherit! :search_paths
@@ -14,7 +14,7 @@ target 'Sample iOS App' do
 end
 
 target 'Sample WatchOS App Extension' do
-	platform :watchos, '2.0'
+	platform :watchos, '3.0'
 	project 'Sample iOS App/Sample iOS App.xcodeproj'
 	use_frameworks!
     inherit! :search_paths
@@ -22,7 +22,7 @@ target 'Sample WatchOS App Extension' do
 end
 
 target 'Sample Today Extension' do
-	platform :ios, '9.0'
+	platform :ios, '10.0'
 	project 'Sample iOS App/Sample iOS App.xcodeproj'
 	use_frameworks!
     inherit! :search_paths
