@@ -28,7 +28,7 @@ class MessengerFileTransitingTests: XCTestCase {
     }
     
     func testMessagePassingDirectoryPath() {
-        XCTAssertNil(fileTransiting.messagePassingDirectoryPath())
+        XCTAssertNotNil(fileTransiting.messagePassingDirectoryPath())
     }
     
     func testFilePath_whenIdentifierEmpty() {
@@ -37,7 +37,7 @@ class MessengerFileTransitingTests: XCTestCase {
     
     func testFilePath_whenIdentifierNotEmpty() {
         // because of testing framework there is no app group available
-        XCTAssertNil(fileTransiting.filePath(forIdentifier: "file1"))
+        XCTAssertNotNil(fileTransiting.filePath(forIdentifier: "file1"))
     }
     
     override func tearDown() {
