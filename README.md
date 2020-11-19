@@ -1,4 +1,4 @@
-[![ASCollectionView CI](https://github.com/abdullahselek/SwiftyMessenger/workflows/SwiftyMessenger%20CI/badge.svg)](https://github.com/abdullahselek/SwiftyMessenger/actions)
+[![SwiftyMessenger CI](https://github.com/abdullahselek/SwiftyMessenger/workflows/SwiftyMessenger%20CI/badge.svg)](https://github.com/abdullahselek/SwiftyMessenger/actions)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/SwiftyMessenger.svg)](http://cocoapods.org/pods/SwiftyMessenger)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 ![Platform](https://img.shields.io/cocoapods/p/SwiftyMessenger.svg?style=flat)
@@ -87,6 +87,12 @@ Modify your Package.swift file to include the following dependency:
 ```
 .package(url: "https://github.com/abdullahselek/SwiftyMessenger.git", from: "0.3")
 ```
+
+## XCFramework
+
+XCFrameworks require Xcode 11 or later and integration is very similar to integration of .framework format. Please use script [scripts/build-framework.sh](scripts/build-framework.sh) to generate binary SwiftyMessenger.xcframework archive that you can use as a dependency in Xcode.
+
+SwiftyMessenger.xcframework is a Release (Optimized) binary that offer best available Swift code performance.
 
 ## Usage
 
