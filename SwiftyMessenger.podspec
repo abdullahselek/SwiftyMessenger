@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name                  = 'SwiftyMessenger'
-    s.version               = '0.3'
+    s.version               = '0.4.0'
     s.summary               = 'Swift toolkit for passing messages between iOS apps and extensions.'
     s.homepage              = 'https://github.com/abdullahselek/SwiftyMessenger'
     s.license               = {
