@@ -37,7 +37,7 @@ It also supports CFNotificationCenter Darwin Notifications in an effort to suppo
 
 | SwiftyMessenger Version | Minimum iOS Target | Minimum watchOS Target | Swift Version |
 |:--------------------:|:---------------------------:|:---------------------------:|:--------------------:|
-| 0.3 | iOS 10 | watchOS 3.0 | Swift 5.0 |
+| 0.4.0 | iOS 10 | watchOS 3.0 | Swift 5.x |
 | 0.2 | iOS 9 | watchOS 2.0 | Swift 4.2 |
 | 0.1 | iOS 9 | watchOS 2.0 | Swift 4.1 |
 
@@ -59,7 +59,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-	pod 'SwiftyMessenger', '~>0.3'
+	pod 'SwiftyMessenger', '~>0.4.0'
 end
 ```
 
@@ -77,7 +77,7 @@ brew install carthage
 To integrate SwiftyMessenger into your Xcode project using Carthage, specify it in your Cartfile:
 
 ```
-github "abdullahselek/SwiftyMessenger" ~> 0.3
+github "abdullahselek/SwiftyMessenger" ~> 0.4.0
 ```
 
 ## Swift Package Manager
@@ -85,7 +85,7 @@ github "abdullahselek/SwiftyMessenger" ~> 0.3
 Modify your Package.swift file to include the following dependency:
 
 ```
-.package(url: "https://github.com/abdullahselek/SwiftyMessenger.git", from: "0.3")
+.package(url: "https://github.com/abdullahselek/SwiftyMessenger.git", from: "0.4.0")
 ```
 
 ## XCFramework
